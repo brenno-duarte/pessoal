@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    /*background-image: url('../img/apple_black-and-white2.jpg');*/
+    width: 100%;
+    margin: 0px;
+}
+
+div {
+    opacity: 1;
+}
+
+p {
+    color: #1C1C1C;
+}
+
+.margin {
+    margin-top: 15px;
+}
+
+.nome {
+    font-family: 'Prompt', sans-serif;
+}
+
+span {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.height {
+    height: 200px;
+}
+
+.img-m {
+}
+
+.img-i {
+    width: 20%;
+    height: 20%;
+}
+
+.back {
+    background-color: #fff;
+}
