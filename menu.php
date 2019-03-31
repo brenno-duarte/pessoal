@@ -13,7 +13,9 @@
 	<div class="navbar-fixed">
 		<nav class="z-depth-0 blue">
 			<div class="nav-wrapper container">
-				<a href="index.php" class="brand-logo nome">Brenno Duarte</a>
+				<a href="index.php" class="brand-logo nome">
+					<img src="img/logo/logop.png" style="width: 50%; height: 50%;">
+				</a>
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger">
 					<span>&#9776;</span>
 				</a>
