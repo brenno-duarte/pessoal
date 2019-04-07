@@ -11,10 +11,10 @@
 
 <body>
 	<div class="navbar-fixed">
-		<nav class="z-depth-0 blue">
+		<nav class="z-depth-0 light-blue accent-4">
 			<div class="nav-wrapper container">
 				<a href="index.php" class="brand-logo nome">
-					<img src="img/logo/logop.png" style="width: 50%; height: 50%;">
+					<img src="img/logo/LOGO3.png" style="width: 45%; height: 45%;">
 				</a>
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger">
 					<span>&#9776;</span>
