@@ -34,29 +34,29 @@
 		</div>
 
 		<div class="col m2 s2 center">
-			<img class="responsive-img img-m" src="img/php.png">
+			<img class="responsive-img img-m" src="img/php7.png">
+		</div>
+
+		<div class="col m2 s2 center">
+			<img class="responsive-img img-m" src="img/mysql.png">
+		</div>
+
+		<div class="col m2 s2">
+			<img class="responsive-img img-m" src="img/jquery.png">
 		</div>
 
 		<div class="col m2 s2 center">
 			<img class="responsive-img img-m" src="img/oracle-java.png">
 		</div>
 
-		<div class="col m2 s2">
-			<img class="responsive-img img-m" src="img/slim.png">
-		</div>
-
 		<div class="col m2 s2 center">
-			<img class="responsive-img img-m" src="img/materialize.png">
-		</div>
-
-		<div class="col m2 s2 center">
-			<img class="responsive-img img-m" src="img/bootstrap.png">
+			<img class="responsive-img img-m" src="img/apache.png">
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="col m2 s2 center">
-			<img class="responsive-img img-m" src="img/jquery.png">
+			<img class="responsive-img img-m" src="img/slim.png">
 		</div>
 
 		<div class="col m2 s2 center">
@@ -64,11 +64,11 @@
 		</div>
 
 		<div class="col m2 s2 center">
-			<img class="responsive-img img-m" src="img/apache.png">
+			<img class="responsive-img img-m" src="img/bootstrap.png">
 		</div>
 
 		<div class="col m2 s2 center">
-			<img class="responsive-img img-m" src="img/mysql.png">
+			<img class="responsive-img img-m" src="img/materialize.png">
 		</div>
 
 		<div class="col m2 s2 center">
@@ -76,7 +76,7 @@
 		</div>
 
 		<div class="col m2 s2 center">
-			<img class="responsive-img img-m" src="img/sublime.png">
+			<img class="responsive-img img-m" src="img/vscode.png">
 		</div>
 	</div>
 

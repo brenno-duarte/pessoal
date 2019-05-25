@@ -5,6 +5,7 @@
 	<title>Brenno Duarte - Desenvolvimento de aplicativos web e sites</title>
 	<link type="text/css" rel="stylesheet" href="css/materialize.css">
 	<link type="text/css" rel="stylesheet" href="css/custom.css">
+	<link type="text/css" rel="icon" href="img/logo/logo_mini.png">
 	<link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
 	<script src="js/materialize.min.js"></script>
 </head>
