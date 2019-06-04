@@ -5,19 +5,19 @@
 		<h1>Contatos</h1>
 		<p>Caso você tenha se interessado pelos meus projetos e queira ter um site ou precise de um sistema para sua empresa/loja, utilize um dos meus contatos para comunicar comigo.</p>
 		<div class="row margin">
-			<div class="center col s3 m3">
+			<div class="center col s12 m3">
 				<a href="https://www.facebook.com/BrennoDuarteOficial" target="_blank"><img class="img-i" src="img/icons/Facebook.png"></a>
 			</div>
 
-			<div class="center col s3 m3">
-				<a href="#" target="_blank"><img class="img-i" src="img/icons/WhatsApp.png"></a>
+			<div class="center col s12 m3">
+				<a href="https://api.whatsapp.com/send?l=pt_BR&phone=5588997286802" target="_blank"><img class="img-i" src="img/icons/WhatsApp.png"></a>
 			</div>
 
-			<div class="center col s3 m3">
+			<div class="center col s12 m3">
 				<a href="https://www.instagram.com/_brennoduarte/" target="_blank"><img class="img-i" src="img/icons/Instagram.png"></a>
 			</div>
 
-			<div class="center col s3 m3">
+			<div class="center col s12 m3">
 				<a href="https://www.linkedin.com/in/brenno-d-09957112a/" target="_blank"><img class="img-i" src="img/icons/Linkedin.png"></a>
 			</div>
 

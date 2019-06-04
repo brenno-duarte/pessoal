@@ -10,7 +10,7 @@
 
 	<div class="row">
 		<div class="col l6">
-			<img src="img/p1.png" class="materialboxed" width="300" data-caption="ClinicalSys - Sistema de consultório médico">
+			<img src="img/p1.png" class="materialboxed responsive-img" data-caption="ClinicalSys - Sistema de consultório médico">
 		</div>
 
 		<div class="col l6">
@@ -20,7 +20,7 @@
 
 	<div class="row">
 		<div class="col l6">
-			<img src="img/p2.png" class="materialboxed" width="300" data-caption="FECAD - Sistema de gerenciamento de contratos administrativos">
+			<img src="img/p2.png" class="materialboxed responsive-img" data-caption="FECAD - Sistema de gerenciamento de contratos administrativos">
 		</div>
 
 		<div class="col l6">
@@ -30,7 +30,7 @@
 
 	<div class="row">
 		<div class="col l6">
-			<img src="img/p3.png" class="materialboxed" width="300" data-caption="SysADV - Sistema de advocacia">
+			<img src="img/p3.png" class="materialboxed responsive-img" data-caption="SysADV - Sistema de advocacia">
 		</div>
 
 		<div class="col l6">
