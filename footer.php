@@ -3,14 +3,14 @@
 		<div class="row">
 			<div class="col l6 s12">
 				<h5 class="white-text">Localidade:</h5>
-				<p class="grey-text text-lighten-4">Iguatu - Ceará - Brasil</p>
+				<p class="grey-text text-lighten-4">Iguatu - Ceará</p>
 			</div>
 			<div class="col l4 offset-l2 s12">
 				<h5 class="white-text">Links</h5>
 				<ul>
-					<li><a class="grey-text text-lighten-3" href="projetos.php">Projetos pessoais</a></li>
-					<li><a class="grey-text text-lighten-3" href="servicos.php">Serviços</a></li>
-					<li><a class="grey-text text-lighten-3" href="#contato">Contatos</a></li>
+					<li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/brennoDuarte">Github</a></li>
+					<li><a class="grey-text text-lighten-3" target="_blank" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K2122329J7">Lattes</a></li>
+					<li><a class="grey-text text-lighten-3" href="/contatos">Contatos</a></li>
 				</ul>
 			</div>
 		</div>

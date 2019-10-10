@@ -1,0 +1,32 @@
+.imagem {
+    margin-top: 0px;
+}
+
+@media (max-width: 760px) {
+    .imagem {
+        margin-top: 50px;
+    }
+}
+
+.texto {
+    color: #000 !important;
+    font-size: 20px;
+}
+
+.img-i {
+    width: 30%;
+    height: 30%;
+}
+
+.tecno {
+    margin: 15px;
+}
+
+.mudar {
+    color: #1E90FF !important;
+}
+
+.mudar:hover {
+    background-color: #1E90FF !important;
+    color: #FFF !important;
+}

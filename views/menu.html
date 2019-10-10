@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Programador e analista de sistemas, desenvolvedor de sites e sistemas web com qualidade" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="geo.region" content="BR-CE" />
+    <meta name="geo.placename" content="Iguatu" />
+    <meta name="geo.position" content="-6.371749;-39.304833" />
+    <meta name="ICBM" content="-6.371749, -39.304833" />
+    <meta name="language" content="pt-br" />
+    <meta name="author" content="Brenno Duarte de Lima">
+
+	<title>{{ title }}</title>
+	<link rel="stylesheet" href="{{ base_url() }}/views/_css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+	<link rel="stylesheet" href="{{ base_url() }}/views/_css/custom.css" />
+	<link rel="icon" href="{{ base_url() }}/views/_img/logo/favicon.ico" />
+</head>
+
+<body>
+	<div class="navbar-fixed">
+		<nav class="z-depth-0 light-blue accent-4">
+			<div class="nav-wrapper container">
+				<a href="{{ path_for('home') }}" class="brand-logo nome">
+					<img src="{{ base_url() }}/views/_img/logo/logopessoalbranca.png" class="responsive-img">
+				</a>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger">
+					<i class="material-icons">menu</i>
+				</a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="#projetos">Projetos pessoais</a></li>
+					<li><a href="{{ path_for('servicos') }}">Serviços</a></li>
+					<li><a href="/contatos">Contatos</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<ul class="sidenav" id="mobile-demo">
+        <div style="margin: 10px 0px 0px 10px">	
+			<li><img src="{{ base_url() }}/views/_img/logo/logopessoalmenu.png" alt=""></li>
+		</div>
+		<li><a href="{{ path_for('home') }}">Início</a></li>
+        <li><a href="{{ path_for('projetos') }}">Projetos pessoais</a></li>
+		<li><a href="{{ path_for('servicos') }}">Serviços</a></li>
+    </ul>
+    
+    <div>{% block content %}{% endblock %}</div>
+
+    <footer class="page-footer blue">
+        <div class="container blue">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Localidade:</h5>
+                    <p class="grey-text text-lighten-4">Iguatu - Ceará</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" target="_blank" href="https://github.com/brennoDuarte">Github</a></li>
+                        <li><a class="grey-text text-lighten-3" target="_blank" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K2122329J7">Lattes</a></li>
+                        <li><a class="grey-text text-lighten-3" href="/contatos">Contatos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2019 Copyright
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="{{ base_url() }}/views/_js/jquery-3.4.1.min.js"></script>
+    <script src="{{ base_url() }}/views/_js/materialize.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.parallax').parallax();
+            $('.carousel').carousel();
+            $('.slider').slider();
+            $('.materialboxed').materialbox();
+            $('.collapsible').collapsible({
+                inDuration: 100,
+                outDuration: 100
+            });
+        });
+    </script>
+</body>
+</html> 
