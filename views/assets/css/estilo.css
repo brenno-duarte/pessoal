@@ -22,11 +22,6 @@
     margin: 15px;
 }
 
-.mudar {
-    color: #1E90FF !important;
-}
-
-.mudar:hover {
-    background-color: #1E90FF !important;
-    color: #FFF !important;
+.fonte {
+    font-size: 17px;
 }
