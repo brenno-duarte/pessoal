@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+  content="Programador freelancer PHP e analista de sistemas, desenvolvedor de sites e sistemas web, desenvolvimento de websites e blog" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="geo.region" content="BR-CE" />
+  <meta name="geo.placename" content="Iguatu" />
+  <meta name="geo.position" content="-6.371749;-39.304833" />
+  <meta name="ICBM" content="-6.371749, -39.304833" />
+  <meta name="language" content="pt-br" />
+  <meta name="author" content="Brenno Duarte de Lima">
+  <title>Brenno Duarte - Programador</title>
+  <link rel="icon" href="{{ base_url() }}/views/_img/logo/favicon.ico" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{{ base_url() }}/views/assets/css/bootstrap.min.css">
+  <!-- Meterial Icon CSS -->
+  <link rel="stylesheet" href="{{ base_url() }}/views/assets/css/materialdesignicons.min.css">
+  <!-- Material CSS -->
+  <link rel="stylesheet" href="{{ base_url() }}/views/assets/css/material.min.css">
+  <!-- Ripples CSS -->
+  <link rel="stylesheet" href="{{ base_url() }}/views/assets/css/ripples.min.css">
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="{{ base_url() }}/views/assets/css/owl.carousel.css">
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="{{ base_url() }}/views/assets/css/magnific-popup.css">
+  <!-- Slicknav CSS -->
+  <link rel="stylesheet" href="{{ base_url() }}/views/assets/css/slicknav.css">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="{{ base_url() }}/views/assets/css/animate.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="{{ base_url() }}/views/assets/css/style2.css">
+  <link rel="stylesheet" href="{{ base_url() }}/views/assets/css/estilo.css">
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="{{ base_url() }}/views/assets/css/responsive.css">
+  <!-- Color CSS Styles  -->
+  <link rel="stylesheet" type="text/css" href="{{ base_url() }}/views/assets/css/colors/blue.css" media="screen" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145625287-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-145625287-1');
+  </script>
+</head>
+
+<body>
+
+  <!-- Header Start -->
+  <header id="header">
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar nav-bg bg-light">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+            aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="mdi mdi-menu"></span>
+            <span class="mdi mdi-menu"></span>
+            <span class="mdi mdi-menu"></span>
+          </button>
+          <a class="navbar-brand" href="{{ path_for('home') }}"><img src="{{ base_url() }}/views/_img/logo/cabecalho-logo.png"
+              alt="Brenno Duarte de Lima Programador"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="navbar-nav mr-auto w-100 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#servicos">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projetos">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contatos">Contatos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sistemas">Sistemas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Mobile Menu Start -->
+      <ul class="wpb-mobile-menu">
+        <li>
+          <a href="#">Serviços</a>
+        </li>
+        <li>
+          <a href="#">Projetos</a>
+        </li>
+        <li>
+          <a href="#">Contatos</a>
+        </li>
+        <li>
+          <a href="#">Sistemas</a>
+        </li>
+      </ul>
+      <!-- Mobile Menu End -->
+    </nav>
+  </header>
+  <!-- Header End -->
+
+  <div>{% block content %}{% endblock %}</div>
+
+    <!--Footer-->
+  <footer class="page-footer center-on-small-only  pt-0 footer-widget-container">
+    <!--Footer Links-->
+    <div class="container pt-5 mb-5">
+      <div class="row">
+        <!--First column-->
+        <div class="col-md-6 col-lg-3 col-xl-3 footer-contact-widget">
+          <h3 class="footer-title">Redes Sociais</h3>
+          <p>Siga-nos nas nossas redes sociais</p>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/brennoduarteprogramador/"><i class="mdi mdi-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/brennoDuarte"><i class="mdi mdi-github-circle"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/brenno-d-09957112a/"><i class="mdi mdi-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCk6qDh5y4M_vcnThjMbzHNw"><i class="mdi mdi-youtube-play"></i></a>
+            </li>
+          </ul>
+        </div>
+        <!--/.First column-->
+      </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!-- Copyright-->
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2019 Material Studio, All right reserved. Designed with <i class="mdi mdi-heart"></i> by <a
+                href="#">UIdeck</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.Copyright -->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- Back To Top -->
+  <a href="#" class="back-to-top">
+    <div class="ripple-container"></div>
+    <i class="mdi mdi-arrow-up">
+    </i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader" id="loader-1"></div>
+  </div>
+  <!-- End Preloader -->
+
+  <!-- Optional JavaScript -->
+  <script src="{{ base_url() }}/views/assets/js/jquery-min.js"></script>
+  <script src="{{ base_url() }}/views/assets/js/popper.min.js"></script>
+  <script src="{{ base_url() }}/views/assets/js/bootstrap.min.js"></script>
+
+  <script src="{{ base_url() }}/views/assets/js/jquery.mixitup.min.js"></script>
+  <script src="{{ base_url() }}/views/assets/js/jquery.inview.js"></script>
+  <script src="{{ base_url() }}/views/assets/js/jquery.counterup.min.js"></script>
+  <script src="{{ base_url() }}/views/assets/js/scroll-top.js"></script>
+  <script src="{{ base_url() }}/views/assets/js/smoothscroll.js"></script>
+  <script src="{{ base_url() }}/views/assets/js/material.min.js"></script>
+  <script src="{{ base_url() }}/views/assets/js/ripples.min.js"></script>
+  <script src="{{ base_url() }}/views/assets/js/owl.carousel.min.js"></script>
+  <script src="{{ base_url() }}/views/assets/js/form-validator.min.js"></script>
+  <script src="{{ base_url() }}/views/assets/js/contact-form-script.min.js"></script>
+  <script src="{{ base_url() }}/views/assets/js/wow.js"></script>
+  <script src="{{ base_url() }}/views/assets/js/jquery.vide.js"></script>
+  <script src="{{ base_url() }}/views/assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="{{ base_url() }}/views/assets/js/jquery.slicknav.js"></script>
+  <script src="{{ base_url() }}/views/assets/js/main.js"></script>
+
+</body>
+</html>

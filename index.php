@@ -11,4 +11,10 @@ $app->get('/',function($request, $response){
 
 })->setName('home');
 
+$app->get('/sistemas',function($request, $response){
+   
+    return $this->view->render($response, 'sistemas.html');
+
+})->setName('sistemas');
+
 $app->run();
