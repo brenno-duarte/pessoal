@@ -1,0 +1,15 @@
+{
+    "name": "",
+    "description": "",
+    "authors": [
+        {
+            "name": "Brenno Duarte de Lima",
+            "email": "brennoduarte2015@outlook.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "^3.0",
+        "slim/twig-view": "^2.2",
+        "slim/flash": "^0.4.0"
+    }
+}

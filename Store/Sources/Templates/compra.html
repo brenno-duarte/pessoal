@@ -1,0 +1,28 @@
+{% extends 'menu.html' %}
+{% block content %}
+
+<div class="container">
+    <div class="row" style="margin-top: 40px;">
+        <div class="col-md-6">
+            {{ sistemas.iframe | raw }}
+        </div>
+
+        <div class="col-md-6" style="margin-left: 0px;">
+            <h1 class="text-dark">Sistema {{ sistemas.nome }}</h1>
+            <p>{{ sistemas.descricao }}</p>
+            <div>
+                <p class="h1 text-dark" style="margin-bottom: 30px;">R$ {{ sistemas.valor }} <span
+                        style="font-size: 20px;">/mês</span> </p>
+                <a href="{{ path_for('finalizar', {'id': sistemas.id, 'nome': sistemas.nome}) }}"
+                    class="btn btn-lg btn-block btn-success">Adquirir
+                    sistema</a>
+                <div class="d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-top: 10px;">Ver
+                        demonstração do sistema</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

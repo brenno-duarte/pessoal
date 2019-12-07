@@ -1,0 +1,253 @@
+{% extends 'menu.html' %}
+{% block content %}
+
+<img class="d-block w-100 slide img-fluid imagem" src="{{ base_url() }}/views/_img/inicio.webp" alt="Primeiro Slide">
+
+<!-- About Section -->
+<section class="Material-about-section section-padding" id="servicos">
+  <div class="container">
+    <div class="row">
+      <!-- Single About -->
+      <div class="col-md-6 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".2s">
+        <div class="about-single">
+          <i class="material-icons">computer</i>
+          <h2 class="subtitle text-primary">Criação de sites</h2>
+          <p>Desenvolvimento de sites responsivos e com layout moderno</p>
+        </div>
+      </div>
+      <!-- Single About -->
+      <div class="col-md-6 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".3s">
+        <div class="about-single">
+          <i class="material-icons">web</i>
+          <h2 class="subtitle text-primary">Criação de sistemas web</h2>
+          <p>Desenvolvimento de sistemas web profissional para sua empresa</p>
+        </div>
+      </div>
+      <!-- Single About -->
+      <div class="col-md-6 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".4s">
+        <div class="about-single">
+          <i class="material-icons">desktop_windows</i>
+          <h2 class="subtitle text-primary">Criação de sistemas desktop</h2>
+          <p>Desenvolvimento de sistemas desktop profissional para sua empresa</p>
+        </div>
+      </div>
+      <!-- Single About -->
+      <div class="col-md-6 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".5s">
+        <div class="about-single">
+          <i class="material-icons">search</i>
+          <h2 class="subtitle text-primary">SEO</h2>
+          <p>Seu site nos primeiros resultados de busva no Google</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- About Section End -->
+
+<!-- Welcome Section Start -->
+<section class="welcome-section section-padding section-dark">
+  <div class="container" id="quemsoueu">
+    <div class="row">
+      <div class="col-md-12 col-lg-7 col-xs-12">
+        <div class="Material-tab">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#business" role="tab"><i
+                  class="material-icons">people_outline</i></br>Quem sou eu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#startup" role="tab"><i
+                  class="material-icons">flash_on</i></br>Experiências</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#agency" role="tab"><i
+                  class="material-icons">ballot</i></br>Currículo</a>
+            </li>
+            <li class="nav-item" id="contatos">
+              <a class="nav-link" data-toggle="tab" href="#saas" role="tab"><i
+                  class="material-icons">call</i></br>Contatos</a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="business" role="tabpanel">
+              <p class="fonte">Me chamo Brenno Duarte de Lima, analista de sistemas (ADS) formado (2019) na Faculdade Vale do
+                Salgado (FVS) em Icó-CE e resido atualmente em Iguatu-CE. Sempre tive interesse em criar
+                coisas e me identifiquei muito com a área de T.I (Tecnologia da informação). Iniciei no mundo
+                da programação em 2015, aos 16 anos, aprendendo primeiramente algoritimos e em seguida Java
+                e em 2016 comecei a frequentar o curso de ADS.</p>
+            </div>
+            <div class="tab-pane fade" id="startup" role="tabpanel">
+              <p class="fonte">Tenho conhecimentos sobre documentação e
+                levantamento de requisitos e também sobre PHP e alguns de seus frameworks (Slim, DomPDF e
+                outros), HTML, CSS, banco de dados e Java. Possuo alguns cursos adicionais sobre o básico
+                ao avançado de programação front e back-end. Para ver alguns dos meus projetos veja <a
+                  href="https://github.com/brennoDuarte">meu repositório no github.</a></p>
+            </div>
+            <div class="tab-pane fade" id="agency" role="tabpanel">
+              <p class="fonte">Você pode visualizar meu currículo nos botões abaixo.</p>
+              <p><a href="{{ base_url() }}/views/Profile.pdf" class="animated4 btn btn-common">Visualizar currículo</a></p>
+              <p><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K2122329J7"
+                  class="animated4 btn btn-common">Visualizar lattes</a></p>
+            </div>
+            <div class="tab-pane fade" id="saas" role="tabpanel">
+              <p class="fonte">Abaixo estão meus contatos que mais utilizo:</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="list-group">
+                    <li class="list-group-item texto"><a href="https://www.facebook.com/brennoduarteprogramador/"
+                        target="_blank"><img class="img-i"
+                          src="{{ base_url() }}/views/assets/images/facebook-icon.png"> Facebook</a></li>
+                    <li class="list-group-item texto"><a href="https://www.instagram.com/brennoduarte_dev/"
+                        target="_blank"><img class="img-i"
+                          src="{{ base_url() }}/views/assets/images/instagram-icon.png"> Instagram</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-md-6">
+                  <ul class="list-group">
+                    <li class="list-group-item texto"><a href="https://www.linkedin.com/in/brenno-d-09957112a/"
+                        target="_blank"><img class="img-i"
+                          src="{{ base_url() }}/views/assets/images/linkedin-icon.png"> Linkedin</a></li>
+                    <li class="list-group-item texto"><a href="mailto:brennoduarte2015@outlook.com"
+                        target="_blank"><img class="img-i" src="{{ base_url() }}/views/_img/icons/Email.png">
+                        E-mail</a></li>
+                  </ul>
+                </div>
+              </div>
+              <p style="margin-top: 10px;" class="fonte">Ou se preferir você pode visualizar nosso cartão de visitas</p>
+              <p><a href="{{ base_url() }}/views/Cartao_Brenno_Duarte.pdf" class="animated4 btn btn-common">Visualizar cartão de visitas</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-5 col-xs-12 welcome-column">
+        <div class="video-gallery">
+          <img class="img-fluid" src="{{ base_url() }}/views/_img/brenno-duarte-lima.webp"
+            alt="Brenno Duarte de Lima">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Welcome Section End -->
+
+<!-- Services Section -->
+<section class="Material-service-section section-padding">
+  <div class="container">
+    <div class="row">
+      <!-- Section Titile -->
+      <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+        <h1 class="section-title">Tecnologias utilizadas</h1>
+      </div>
+    </div>
+    <!-- Services Widget Section -->
+    <div class="row">
+      <!-- Service Widgets -->
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 single-service-widget wow animated fadeInUp" data-wow-delay=".3s">
+        <div class="media">
+          <div class="media-body">
+            <img class="img-fluid tecno" src="{{ base_url() }}/views/_img/html5_css3.webp">
+            <img class="img-fluid tecno" src="{{ base_url() }}/views/_img/php7.webp">
+            <img class="img-fluid tecno" src="{{ base_url() }}/views/_img/mysql.webp">
+            <img class="img-fluid tecno" src="{{ base_url() }}/views/_img/jquery.webp">
+            <img class="img-fluid tecno" src="{{ base_url() }}/views/_img/oracle-java.webp">
+            <img class="img-fluid tecno" src="{{ base_url() }}/views/_img/apache.webp">
+            <img class="img-fluid tecno" src="{{ base_url() }}/views/_img/slim.webp">
+            <img class="img-fluid tecno" src="{{ base_url() }}/views/_img/composer.webp">
+            <img class="img-fluid tecno" src="{{ base_url() }}/views/_img/bootstrap.webp">
+            <img class="img-fluid tecno" src="{{ base_url() }}/views/_img/materialize.webp">
+            <img class="img-fluid tecno" src="{{ base_url() }}/views/_img/netbeans.webp">
+            <img class="img-fluid tecno" src="{{ base_url() }}/views/_img/vscode.webp">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Services Section End -->
+
+
+
+<!-- Our BLog Section -->
+<section class="Material-blog-section section-padding" id="projetos">
+  <div class="container">
+    <div class="row">
+      <!-- Section Titile -->
+      <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+        <h1 class="section-title">Projetos pessoais</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Single Article -->
+      <div class="col-md-6 col-lg-4 col-xl-4 wow animated fadeInUp" data-wow-delay=".3s">
+        <article class="single-blog-post">
+          <!-- Featured Image -->
+          <div class="featured-image">
+            <a href="#">
+              <img src="{{ base_url() }}/views/_img/sistemas_img/clinicalsys.webp"
+                alt="ClinicalSys - Sistema de consultório médico">
+            </a>
+          </div>
+          <!-- Post Meta -->
+          <div class="post-meta">
+            <!-- Title -->
+            <h2 class="subtitle">Clinicalsys</h2>
+            <p>Sistema para consultório médico e marcação de
+              consultas, com cadastro de pacientes, médicos, convênios e uma área
+              administrativa para cadastrar secretárias e emitir relatórios.</p>
+          </div>
+        </article>
+      </div>
+      <!-- Single Article -->
+      <div class="col-md-6 col-lg-4 col-xl-4 wow animated fadeInUp" data-wow-delay=".4s">
+        <article class="single-blog-post">
+          <!-- Featured Image -->
+          <div class="featured-image">
+            <a href="#">
+              <img src="{{ base_url() }}/views/_img/sistemas_img/fecad.webp"
+                alt="FECAD - Sistema de gerenciamento de contratos administrativos">
+            </a>
+          </div>
+          <!-- Post Meta -->
+          <div class="post-meta">
+            <!-- Title -->
+            <h2 class="subtitle">FECAD</h2>
+            <p>Sistema de gerenciamento de contratos administrativos, podendo contratar e renovar
+              contratos de licitações e fazer aditivos contratuais.</p>
+          </div>
+        </article>
+      </div>
+      <!-- Single Article -->
+      <div class="col-md-6 col-lg-4 col-xl-4 wow animated fadeInUp" data-wow-delay=".5s">
+        <article class="single-blog-post">
+          <!-- Featured Image -->
+          <div class="featured-image">
+            <a href="#">
+              <img src="{{ base_url() }}/views/_img/bannerfb.webp" alt="Imóveis Avista">
+            </a>
+          </div>
+          <!-- Post Meta -->
+          <div class="post-meta">
+            <!-- Title -->
+            <h2 class="subtitle">Imóveis Avista</h2>
+            <p>Site de busca e divulgação de imóveis, clique no botão abaixo bara conhecer o site.</p>
+            <a href="https://imoveisavista.com.br" target="_blank" class="animated4 btn btn-common" data-ripple-color="#000">Acessar Imóveis Avista<div class="ripple-container"></div></a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="row mt-5 wow animated fadeInUp" data-wow-delay=".6s">
+      <!-- Button -->
+      <div class="col-md-12 text-center">
+        <a href="https://github.com/brennoDuarte" class="animated4 btn btn-common" data-ripple-color="#000">Ver mais
+          no GitHub<div class="ripple-container"></div></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Our BLog Section End -->
+
+{% endblock %}

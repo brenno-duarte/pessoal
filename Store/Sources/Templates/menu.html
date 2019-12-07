@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ meta.description }}">
+    <meta name="author" content="{{ meta.author }}">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="{{ base_url() }}/Sources/Templates/assets/_img/logo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ base_url() }}/Sources/Templates/assets/_css/custom.css">
+    <link rel="stylesheet" href="{{ base_url() }}/Sources/Templates/assets/_css/form.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>{{ meta.title }}</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <span class="container">
+            <a class="navbar-brand text-dark" href="{{ path_for('index') }}"><img src="{{ base_url() }}/Sources/Templates/assets/_img/logo/logo-bdpstoretransparente2.png" class="img-fluid logo" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link font-weight-bold" href="#">Início</a>
+                    <a class="nav-item nav-link font-weight-bold" href="#">Contato</a>
+                    <a class="nav-item nav-link font-weight-bold" href="#">Sobre</a>
+                </div>
+            </div>
+        </span>
+    </nav>
+
+    <main role="main">{% block content %}{% endblock %}</main>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Voltar ao topo</a>
+            </p>
+            <p>Rua Nelson de Souza Alencar, Iguatu, Ceará &copy; 2019 Copyright</p>
+            <p>Visite nossa página principal <a href="http://brennoduarte.rf.gd" target="_blank">clicando aqui</a></p>
+        </div>
+    </footer>
+
+    <!-- Principal JavaScript do Bootstrap
+          ================================================== -->
+    <!-- Foi colocado no final para a página carregar mais rápido -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="{{ base_url() }}/Sources/Templates/assets/_js/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#fone").mask("(00) 00000-0000");
+        })
+    </script>
+</body>
+
+</html>

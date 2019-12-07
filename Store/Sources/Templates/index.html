@@ -1,0 +1,42 @@
+{% extends 'menu.html' %}
+{% block content %}
+
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading"><img src="{{ base_url() }}/Sources/Templates/assets/_img/logo/logo-bdpstoretransparente.png" class="img-fluid" alt=""></h1>
+        <p class="lead text-muted"></p>
+        <p>
+            <a href="#" class="btn btn-primary my-2">Call-to-action principal</a>
+            <a href="#" class="btn btn-secondary my-2">Call-to-action secundário</a>
+        </p>
+    </div>
+</section>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            {% for sistemas in sistemas %}
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top"
+                        src="{{ base_url() }}/Sources/Templates/assets/sistemas_img/{{ sistemas.foto }}"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h1 class="text-primary font-weight-bold">{{ sistemas.nome }}</h1>
+                        <p class="card-text text-justify">{{ sistemas.descricao }}</p>
+                        <div class="bg-custom text-center">
+                            <p class="h1 text-dark" style="margin-bottom: 30px;">R$ {{ sistemas.valor }} <span
+                                    style="font-size: 20px;">/mês</span> </p>
+                            <a href="{{ path_for('compra', {'nome': sistemas.nome}) }}"
+                                class="btn btn-lg btn-block btn-success">Adquirir
+                                sistema</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
