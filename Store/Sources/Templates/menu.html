@@ -7,7 +7,8 @@
     <meta name="description" content="{{ meta.description }}">
     <meta name="author" content="{{ meta.author }}">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="{{ base_url() }}/Sources/Templates/assets/_img/logo/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ base_url() }}/Sources/Templates/assets/_img/logo/favicon.ico"
+        type="image/x-icon">
     <link rel="stylesheet" href="{{ base_url() }}/Sources/Templates/assets/_css/custom.css">
     <link rel="stylesheet" href="{{ base_url() }}/Sources/Templates/assets/_css/form.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -16,32 +17,45 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg shadow bg-custom">
         <span class="container">
-            <a class="navbar-brand text-dark" href="{{ path_for('index') }}"><img src="{{ base_url() }}/Sources/Templates/assets/_img/logo/logo-bdpstoretransparente2.png" class="img-fluid logo" alt=""></a>
+            <a class="navbar-brand text-dark" href="{{ path_for('index') }}"><img
+                    src="{{ base_url() }}/Sources/Templates/assets/_img/logo/bdpstorebranco-sm.png"
+                    class="img-fluid logo" alt="bdp store logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon"></span>
+                <img src="{{ base_url() }}/Sources/Templates/assets/_img/menu.png" alt="">
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link font-weight-bold" href="#">Início</a>
-                    <a class="nav-item nav-link font-weight-bold" href="#">Contato</a>
-                    <a class="nav-item nav-link font-weight-bold" href="#">Sobre</a>
+                    <a class="nav-item nav-link text-white font-weight-bold" href="{{ path_for('index') }}">Início</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white font-weight-bold dropdown" data-toggle="dropdown" href="#"
+                            role="button" aria-haspopup="true" aria-expanded="false" id="cat">Categorias</a>
+                        <div class="dropdown-menu bg-custom mt-4" id="dropdown-itens">
+                            <a class="dropdown-item text-white p-3 my-1" href="{{ path_for('index') }}">Todas</a>
+                            <a class="dropdown-item text-white p-3 my-1" href="busca?categoria=Sistema web">Sistemas web</a>
+                            <a class="dropdown-item text-white p-3 my-1" href="busca?categoria=Sistema desktop">Sistemas
+                                desktop</a>
+                        </div>
+                    </li>
+                    <a class="nav-item nav-link text-white font-weight-bold" href="#">Contato</a>
+                    <a class="nav-item nav-link text-white font-weight-bold" href="#">Sobre</a>
                 </div>
             </div>
         </span>
     </nav>
 
-    <main role="main">{% block content %}{% endblock %}</main>
+    <main role="main bg-light">{% block content %}{% endblock %}</main>
 
-    <footer class="text-muted">
-        <div class="container">
+    <footer class="text-muted bg-dark">
+        <div class="container text-white">
             <p class="float-right">
-                <a href="#">Voltar ao topo</a>
+                <a href="#" class="btn btn-primary">Voltar ao topo</a>
             </p>
             <p>Rua Nelson de Souza Alencar, Iguatu, Ceará &copy; 2019 Copyright</p>
-            <p>Visite nossa página principal <a href="http://brennoduarte.rf.gd" target="_blank">clicando aqui</a></p>
+            <p>Visite nossa página principal <a href="http://brennoduarte.rf.gd" target="_blank"
+                    class="text-warning">clicando aqui</a></p>
         </div>
     </footer>
 
@@ -60,7 +74,7 @@
     <script src="{{ base_url() }}/Sources/Templates/assets/_js/jquery.mask.min.js"></script>
     <script>
         $(document).ready(function () {
-            $("#fone").mask("(00) 00000-0000");
+            //$("#fone").mask("(00) 00000-0000");
         })
     </script>
 </body>

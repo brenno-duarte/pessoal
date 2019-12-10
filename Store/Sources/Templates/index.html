@@ -3,33 +3,39 @@
 
 <section class="jumbotron text-center">
     <div class="container">
-        <h1 class="jumbotron-heading"><img src="{{ base_url() }}/Sources/Templates/assets/_img/logo/logo-bdpstoretransparente.png" class="img-fluid" alt=""></h1>
-        <p class="lead text-muted"></p>
-        <p>
-            <a href="#" class="btn btn-primary my-2">Call-to-action principal</a>
-            <a href="#" class="btn btn-secondary my-2">Call-to-action secundário</a>
-        </p>
+        <h1 class="jumbotron-heading"><img
+                src="{{ base_url() }}/Sources/Templates/assets/_img/logo/bdpstoretransparente-lg.png" class="img-fluid"
+                alt="bdp store logo"></h1>
     </div>
 </section>
 
 <div class="album py-5 bg-light">
     <div class="container">
+        {% if categoria %}
+        <p class="h4 mb-4">
+            <span class="font-weight-bold">Exibindo resultados para:</span> {{ categoria }}
+        </p>
+        {% endif %}
         <div class="row">
             {% for sistemas in sistemas %}
-            <div class="col-md-4">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
                 <div class="card mb-4 shadow-sm">
                     <img class="card-img-top"
                         src="{{ base_url() }}/Sources/Templates/assets/sistemas_img/{{ sistemas.foto }}"
                         alt="Card image cap">
                     <div class="card-body">
                         <h1 class="text-primary font-weight-bold">{{ sistemas.nome }}</h1>
-                        <p class="card-text text-justify">{{ sistemas.descricao }}</p>
-                        <div class="bg-custom text-center">
-                            <p class="h1 text-dark" style="margin-bottom: 30px;">R$ {{ sistemas.valor }} <span
+                        <p class="card-text mt-4">
+                            <span class="font-weight-bold">Tipo:</span> {{ sistemas.tipo }}
+                        </p>
+                        <p class="card-text">
+                            <span class="font-weight-bold">Categoria:</span> {{ sistemas.categoria }}
+                        </p>
+                        <div class="text-center mt-5">
+                            <p class="h1 text-success font-weight-light mb-4">R$ {{ sistemas.valor }} <span
                                     style="font-size: 20px;">/mês</span> </p>
                             <a href="{{ path_for('compra', {'nome': sistemas.nome}) }}"
-                                class="btn btn-lg btn-block btn-success">Adquirir
-                                sistema</a>
+                                class="btn btn-lg btn-block btn-primary">Visualizar produto</a>
                         </div>
                     </div>
                 </div>

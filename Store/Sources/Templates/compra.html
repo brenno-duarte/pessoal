@@ -1,25 +1,50 @@
 {% extends 'menu.html' %}
 {% block content %}
 
-<div class="container">
-    <div class="row" style="margin-top: 40px;">
-        <div class="col-md-6">
-            {{ sistemas.iframe | raw }}
-        </div>
+<div class="bg-light">
+    <div class="container mt-3">
+        <a href="{{ path_for('index') }}" class="btn btn-outline-primary">Voltar</a>
 
-        <div class="col-md-6" style="margin-left: 0px;">
-            <h1 class="text-dark">Sistema {{ sistemas.nome }}</h1>
-            <p>{{ sistemas.descricao }}</p>
-            <div>
-                <p class="h1 text-dark" style="margin-bottom: 30px;">R$ {{ sistemas.valor }} <span
-                        style="font-size: 20px;">/mês</span> </p>
-                <a href="{{ path_for('finalizar', {'id': sistemas.id, 'nome': sistemas.nome}) }}"
-                    class="btn btn-lg btn-block btn-success">Adquirir
-                    sistema</a>
-                <div class="d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn btn-sm btn-outline-secondary" style="margin-top: 10px;">Ver
-                        demonstração do sistema</button>
+        <div class="row mt-4">
+            <div class="col-md-8">
+                <h4>Fotos do sistema</h4>
+                {% for fotos in fotos %}
+                <p class="border border-secondary rounded"><img class="card-img-top"
+                        src="{{ base_url() }}/Sources/Templates/assets/sistemas_img/{{ fotos.nomeFoto }}"
+                        alt="Card image cap"></p>
+                        {% endfor %}
+
+                {% if sistemas.iframe %}
+                <h4>Video demonstração</h4>
+                <p>{{ sistemas.iframe | raw }}</p>
+                {% endif %}
+            </div>
+
+            <div class="col-md-4">
+                <p class="display-4 text-dark font-weight-bold">{{ sistemas.nome }}</p>
+                <div>
+                    <p class="h3 text-success font-weight-bold">R$ {{ sistemas.valor }} <span
+                            style="font-size: 20px;">/mês</span> </p>
+
+                    <a href="{{ path_for('finalizar', {'id': sistemas.id, 'nome': sistemas.nome}) }}"
+                        class="btn btn-lg btn-primary mt-3">Adquirir
+                        sistema</a>
+                    <div class="mt-4">
+                        <a href="#" class="text-primary">Ver
+                            demonstração do sistema</a>
+                    </div>
                 </div>
+
+                <ul class="list-group mt-3 mb-5">
+                    <li class="list-group-item">
+                        <p class="font-weight-bold">Descrição</p>
+                        <p>{{ sistemas.descricao }}</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p class="font-weight-bold">Categoria</p>
+                        <p>{{ sistemas.categoria }}</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

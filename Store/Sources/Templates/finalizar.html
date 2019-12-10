@@ -1,43 +1,19 @@
-{% extends 'menu.html' %}
-{% block content %}
+<form method="post" action="https://pagseguro.uol.com.br/v2/checkout/payment.html">
 
-<div class="container">
-    <form action="#" method="post" class="form-signin">
-        <p class="h3 text-center">Preencha o formulário para contratar o sistema</p>
-        <div class="form-group">
-            <label for="nome">Nome do produto</label>
-            <input type="text" name="nome" id="nome" value="{{ nome }}" class="form-control" readonly required>
-            <input type="hidden" name="nome" id="nome" value="{{ sistemas.id }}" class="form-control" readonly
-                required>
-        </div>
+    <!-- Campos obrigatórios -->
+    <input name="receiverEmail" type="hidden" value="brennoduarte2015@outlook.com">
+    <input name="currency" type="hidden" value="BRL">
 
-        <div class="form-group">
-            <label for="empresa">Nome/Empresa</label>
-            <input type="text" name="empresa" id="empresa" class="form-control" required>
-        </div>
+    <!-- Itens do pagamento (ao menos um item é obrigatório) -->
+    <input name="itemId1" type="hidden" value="{{ sistemas.id }}">
+    <input name="itemDescription1" type="hidden" value="{{ sistemas.nome }}">
+    <input name="itemAmount1" type="hidden" value="{{ valor }}">
+    <input name="itemQuantity1" type="hidden" value="1">
 
-        <div class="form-group">
-            <label for="">Tipo de pessoa</label>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="pessoa" id="Físico" value="Físico">
-                <label class="form-check-label" for="Físico">
-                    Físico
-                </label>
-            </div>
+    <input alt="Pague com PagSeguro" name="submit" type="image"
+        src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/120x53-pagar.gif" />
 
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="pessoa" id="Jurídico" value="Jurídico">
-                <label class="form-check-label" for="Jurídico">
-                    Jurídico
-                </label>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label for="fone">Telefone</label>
-            <input type="text" name="fone" id="fone" class="form-control" required>
-        </div>
-    </form>
-</div>
-
-{% endblock %}
+</form>
+<script>
+    document.forms[0].submit();
+</script>
