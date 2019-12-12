@@ -62,7 +62,8 @@ footer p {
 }
 
 .nav-link:hover {
-    background-color: #1E90FF;
+    background-color: #FFF;
+    color: #00688B !important;
     border-radius: 5px;
     transition: 0.2s;
 }

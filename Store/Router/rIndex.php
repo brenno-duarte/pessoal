@@ -10,7 +10,7 @@ $app->get('/', function($request, $response){
     $res = $stmt->fetchAll();
 
     $meta = [
-        'BDP Store - Adquira sistemas profissionais para seu negócio',
+        'BDuarte Store - Adquira sistemas profissionais para seu negócio',
         'Sistemas online',
         'Brenno Duarte de Lima',
         'index',
@@ -34,7 +34,7 @@ $app->get('/busca', function($request, $response){
     $res = $stmt->fetchAll();
     
     $meta = [
-        'BDP Store - Resultados de busca para '. $categoria,
+        'Resultados de busca para '. $categoria. ' | BDuarte Store' ,
         'Sistemas online',
         'Brenno Duarte de Lima',
         'index',
@@ -51,18 +51,10 @@ $app->get('/busca', function($request, $response){
 
 })->setName('index');
 
-$app->get('/{nome}', function($request, $response, $args){
-    
-    $stmt = DB::prepare("SELECT * FROM sistemas WHERE nome = '".$args['nome']."'");
-    $stmt->execute();
-    $res = $stmt->fetch();
-
-    $stmt2 = DB::prepare("SELECT * FROM fotos WHERE idsistema = '".$res['idsistema']."'");
-    $stmt2->execute();
-    $res2 = $stmt2->fetchAll();
+$app->get('/contato', function($request, $response){
 
     $meta = [
-        $res['nome'] . " - BDP Store",
+        'Contato | BDuarte Store',
         'Sistemas online',
         'Brenno Duarte de Lima',
         'index',
@@ -70,37 +62,29 @@ $app->get('/{nome}', function($request, $response, $args){
     ];
 
     $tags = SEOTags::metaTags($meta);
-
-    return $this->view->render($response, 'compra.html', [
-        'meta' => $tags,
-        'sistemas' => $res,
-        'fotos' => $res2
-    ]);
-
-})->setName('compra');
-
-$app->get('/finalizar-compra/{id}/{nome}', function($request, $response, $args){
     
-    $nome = $args['nome'];
-    $stmt = DB::prepare("SELECT * FROM sistemas WHERE id = '".$args['id']."'");
-    $stmt->execute();
-    $res = $stmt->fetch();
-    #var_dump($res['valor']);
-    $meta = [
-        $res['nome'] . " - BDP Store",
-        'Sistemas online',
-        'Brenno Duarte de Lima',
-        'index',
-        'follow'
-    ];
-
-    $tags = SEOTags::metaTags($meta);
-
-    return $this->view->render($response, 'finalizar.html', [
+    $msg = $this->flash->getFirstMessage('send');
+    return $this->view->render($response, 'contato.html', [
         'meta' => $tags,
-        'sistemas' => $res,
-        'nome' => $nome,
-        'valor' => $res['valor'].".00"
+        'msg' => $msg
     ]);
 
-})->setName('finalizar');
+})->setName('contato');
+
+$app->post('/contato', function($request, $response){
+
+    $nome = filter_input(INPUT_POST, 'nome');
+    $email = filter_input(INPUT_POST, 'email');
+    $mensagem = filter_input(INPUT_POST, 'mensagem');
+
+    $sql = "INSERT INTO mensagens (nomeMsg, emailMsg, mensagem) VALUES (:nomeMsg, :emailMsg, :mensagem)";
+    $stmt = DB::prepare($sql);
+    $stmt->bindValue(":nomeMsg", $nome);
+    $stmt->bindValue(":emailMsg", $email);
+    $stmt->bindValue(":mensagem", $mensagem);
+    $stmt->execute();
+
+    $this->flash->addMessage('send', 'Mensagem enviada com sucesso');
+    return $response->withRedirect($this->router->pathFor('contato'));
+
+})->setName('contato');

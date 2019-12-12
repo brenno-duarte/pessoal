@@ -9,10 +9,10 @@
             <div class="col-md-8">
                 <h4>Fotos do sistema</h4>
                 {% for fotos in fotos %}
-                <p class="border border-secondary rounded"><img class="card-img-top"
+                <p class="border border-secondary rounded wow animated fadeInUp"><img class="card-img-top"
                         src="{{ base_url() }}/Sources/Templates/assets/sistemas_img/{{ fotos.nomeFoto }}"
                         alt="Card image cap"></p>
-                        {% endfor %}
+                {% endfor %}
 
                 {% if sistemas.iframe %}
                 <h4>Video demonstração</h4>
@@ -23,16 +23,19 @@
             <div class="col-md-4">
                 <p class="display-4 text-dark font-weight-bold">{{ sistemas.nome }}</p>
                 <div>
-                    <p class="h3 text-success font-weight-bold">R$ {{ sistemas.valor }} <span
-                            style="font-size: 20px;">/mês</span> </p>
+                    <p class="h3 text-success font-weight-bold">R$ {{ sistemas.valor }}
+                        {% if sistemas.categoria == 'Sistema web' %}
+                        <span style="font-size: 20px;">/mês</span> </p>
+                        {% else %}
+                        <span style="font-size: 20px;"></span> </p>
+                        {% endif %}
 
-                    <a href="{{ path_for('finalizar', {'id': sistemas.id, 'nome': sistemas.nome}) }}"
-                        class="btn btn-lg btn-primary mt-3">Adquirir
-                        sistema</a>
+                    <a href="{{ sistemas.demo }}" class="btn btn-lg btn-primary mt-3">Adquirir sistema</a>
+                    
                     <div class="mt-4">
-                        <a href="#" class="text-primary">Ver
-                            demonstração do sistema</a>
+                        <p class="font-weight-bold text-dark">Pagamento utilizando o PagSeguro</p>
                     </div>
+                    
                 </div>
 
                 <ul class="list-group mt-3 mb-5">

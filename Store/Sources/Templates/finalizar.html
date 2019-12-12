@@ -1,19 +1,10 @@
-<form method="post" action="https://pagseguro.uol.com.br/v2/checkout/payment.html">
-
-    <!-- Campos obrigatórios -->
-    <input name="receiverEmail" type="hidden" value="brennoduarte2015@outlook.com">
-    <input name="currency" type="hidden" value="BRL">
-
-    <!-- Itens do pagamento (ao menos um item é obrigatório) -->
-    <input name="itemId1" type="hidden" value="{{ sistemas.id }}">
-    <input name="itemDescription1" type="hidden" value="{{ sistemas.nome }}">
-    <input name="itemAmount1" type="hidden" value="{{ valor }}">
-    <input name="itemQuantity1" type="hidden" value="1">
-
-    <input alt="Pague com PagSeguro" name="submit" type="image"
-        src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/120x53-pagar.gif" />
-
-</form>
+<!-- INICIO FORMULARIO BOTAO PAGSEGURO: NAO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+<form action="https://pagseguro.uol.com.br/pre-approvals/request.html" method="post">
+    <input type="hidden" name="code" value="65097569AFAFE2CDD481FF99F7CCBD46" />
+    <input type="hidden" name="iot" value="button" />
+    <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/assinaturas/209x48-contratar-azul-assina.gif" name="submit" alt="Pague com PagSeguro - É rápido, grátis e seguro!" width="209" height="48" />
+    </form>
+    <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
 <script>
-    document.forms[0].submit();
+    //document.forms[0].submit();
 </script>
