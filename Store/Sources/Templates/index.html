@@ -3,49 +3,66 @@
 
 <section class="jumbotron text-center">
     <div class="container">
-        <h1 class="jumbotron-heading wow animated fadeInUp"><img
-                src="{{ base_url() }}/Sources/Templates/assets/_img/lg/logo-bdpstore-01.png" class="img-fluid"
-                alt="bdp store logo"></h1>
+        <p class="jumbotron-heading wow animated fadeInUp"><img
+                src="{{ base_url() }}/Sources/Templates/assets/_img/lg/bdpstore-03.png" class="img-fluid"
+                alt="BDuarte Store"></p>
+        <h1 class="h3 wow animated fadeInUp">Adquira sistemas profissionais para seu negócio</h1>
     </div>
 </section>
 
 <div class="album py-5 bg-light">
-    <div class="container">
-        {% if categoria %}
-        <p class="h4 mb-4 wow animated fadeInUp">
-            <span class="font-weight-bold">Exibindo resultados para:</span> {{ categoria }}
-        </p>
-        {% endif %}
-        <div class="row">
-            {% for sistemas in sistemas %}
-            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 wow animated fadeInUp">
-                <div class="card mb-4 shadow-sm">
-                    <img class="card-img-top"
-                        src="{{ base_url() }}/Sources/Templates/assets/sistemas_img/{{ sistemas.foto }}"
-                        alt="Card image cap">
-                    <div class="card-body">
-                        <h1 class="text-primary font-weight-bold">{{ sistemas.nome }}</h1>
-                        <p class="card-text mt-4">
-                            <span class="font-weight-bold">Tipo:</span> {{ sistemas.tipo }}
-                        </p>
-                        <p class="card-text">
-                            <span class="font-weight-bold">Categoria:</span> {{ sistemas.categoria }}
-                        </p>
-                        <div class="text-center mt-5">
-                            <p class="h1 text-success font-weight-light mb-4">R$ {{ sistemas.valor }} 
-                                {% if sistemas.categoria == 'Sistema web' %}
-                                <span style="font-size: 20px;">/mês</span> </p>
-                                {% else %}
-                                <span style="font-size: 20px;"></span> </p>
-                                {% endif %}
-                            <a href="{{ path_for('compra', {'nome': sistemas.nome}) }}"
-                                class="btn btn-lg btn-block btn-primary">Visualizar produto</a>
-                        </div>
-                    </div>
+    <div class="container-fluid">
+        <section class="row">
+            <div class="col-md-4">
+                <div class="list-group wow animated fadeInUp mb-4">
+                    <p class="h4 mb-3 ml-1">Categorias</p>
+                    <a href="{{ path_for('index') }}"
+                        class="list-group-item list-group-item-action text-primary">Todas</a>
+                    <a href="busca?categoria=Sistema web"
+                        class="list-group-item list-group-item-action text-primary">Sitemas WEB</a>
+                    <a href="busca?categoria=Sistema desktop"
+                        class="list-group-item list-group-item-action text-primary">Sistemas Desktop</a>
                 </div>
             </div>
-            {% endfor %}
-        </div>
+
+            <main class="col-md-8">
+                {% if categoria %}
+                <p class="h4 mb-4 wow animated fadeInUp">
+                    <span class="font-weight-bold">Exibindo resultados para:</span> {{ categoria }}
+                </p>
+                {% endif %}
+                <div class="row">
+                    {% for sistemas in sistemas %}
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 wow animated fadeInUp">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top"
+                                src="{{ base_url() }}/Sources/Templates/assets/sistemas_img/{{ sistemas.foto }}"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h1 class="text-dark mt-3">{{ sistemas.nome }}</h1>
+                                <p class="card-text mt-4">
+                                    <span class="font-weight-bold">Tipo:</span> {{ sistemas.tipo }}
+                                </p>
+                                <p class="card-text">
+                                    <span class="font-weight-bold">Categoria:</span> {{ sistemas.categoria }}
+                                </p>
+                                <div class="text-center mt-5">
+                                    <p class="h1 text-success font-weight-light mb-4">R$ {{ sistemas.valor }}
+                                        {% if sistemas.categoria == 'Sistema web' %}
+                                        <span style="font-size: 20px;">/mês</span> </p>
+                                        {% else %}
+                                        </p>
+                                        {% endif %}
+                                    <a href="{{ path_for('compra', {'nome': sistemas.nome}) }}"
+                                        class="btn btn-lg btn-block btn-primary">Visualizar produto</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </main>
+        </section>
     </div>
 </div>
 

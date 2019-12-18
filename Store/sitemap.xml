@@ -1,0 +1,64 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://bduartestore.com.br/</loc>
+        <lastmod>2019-12-17</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://bduartestore.com.br/ClinicalSys</loc>
+        <lastmod>2019-12-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://bduartestore.com.br/FECAD</loc>
+        <lastmod>2019-12-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://bduartestore.com.br/ControlVCE</loc>
+        <lastmod>2019-12-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://bduartestore.com.br/SysServicos</loc>
+        <lastmod>2019-12-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://bduartestore.com.br/LibrarySB</loc>
+        <lastmod>2019-12-18</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://bduartestore.com.br/contato</loc>
+        <lastmod>2019-12-17</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://bduartestore.com.br/sobre</loc>
+        <lastmod>2019-12-17</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://bduartestore.com.br/desenvolvedores</loc>
+        <lastmod>2019-12-17</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+</urlset>

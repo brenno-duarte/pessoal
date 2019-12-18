@@ -9,6 +9,11 @@ class SEOTags {
         "index" => '',
         "follow" => ''
     ];
+
+    private static $link = [
+        "canonical" => ''
+    ];
+
     private static $tags = [
         "type" => '',
         "title" => '',
@@ -27,6 +32,12 @@ class SEOTags {
         self::$tags['imageAlt'] = $args[5];
 
         return self::$tags;
+    }
+
+    public static function linkTags($args = []){
+        self::$link['canonical'] = $args[0];
+
+        return self::$link;
     }
 
     public static function metaTags($args = []){

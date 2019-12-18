@@ -10,17 +10,24 @@ $app->get('/', function($request, $response){
     $res = $stmt->fetchAll();
 
     $meta = [
-        'BDuarte Store - Adquira sistemas profissionais para seu negócio',
-        'Sistemas online',
-        'Brenno Duarte de Lima',
+        'BDuarte Store | Adquira sistemas web e desktop profissionais para seu negócio',
+        'Sistema de vendas, consultório médico, ordem de serviço e muito mais totalmente 
+        adaptados para seu celular.',
+        'Brenno Duarte de Lima, BDuarte Store',
         'index',
         'follow'
     ];
 
+    $link = [
+        'http://bduartestore.com.br'
+    ];
+
     $tags = SEOTags::metaTags($meta);
+    $tags2 = SEOTags::linkTags($link);
 
     return $this->view->render($response, 'index.html', [
         'meta' => $tags,
+        'link' => $tags2,
         'sistemas' => $res
     ]);
 
@@ -35,16 +42,23 @@ $app->get('/busca', function($request, $response){
     
     $meta = [
         'Resultados de busca para '. $categoria. ' | BDuarte Store' ,
-        'Sistemas online',
-        'Brenno Duarte de Lima',
+        'Sistema de vendas, consultório médico, ordem de serviço e muito mais totalmente 
+        adaptados para seu celular.',
+        'Brenno Duarte de Lima, BDuarte Store',
         'index',
         'follow'
     ];
 
+    $link = [
+        'http://bduartestore.com.br'
+    ];
+
     $tags = SEOTags::metaTags($meta);
+    $tags2 = SEOTags::linkTags($link);
     
     return $this->view->render($response, 'index.html', [
         'meta' => $tags,
+        'link' => $tags2,
         'sistemas' => $res,
         'categoria' => $categoria
     ]);
@@ -55,17 +69,24 @@ $app->get('/contato', function($request, $response){
 
     $meta = [
         'Contato | BDuarte Store',
-        'Sistemas online',
-        'Brenno Duarte de Lima',
+        'Sistema de vendas, consultório médico, ordem de serviço e muito mais totalmente 
+        adaptados para seu celular.',
+        'Brenno Duarte de Lima, BDuarte Store',
         'index',
         'follow'
     ];
 
+    $link = [
+        'http://bduartestore.com.br/contato'
+    ];
+
     $tags = SEOTags::metaTags($meta);
+    $tags2 = SEOTags::linkTags($link);
     
     $msg = $this->flash->getFirstMessage('send');
     return $this->view->render($response, 'contato.html', [
         'meta' => $tags,
+        'link' => $tags2,
         'msg' => $msg
     ]);
 

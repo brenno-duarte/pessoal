@@ -12,15 +12,15 @@ define('ROOT_PATH', dirname(__FILE__));
 
 # Configurações do banco
 define('DB_CONFIG', [
-    'drive' => 'drive',
-    'host' => 'host',
-    'dbname' => 'banco',
-    'user' => 'usuario',
-    'pass' => 'senha'
+    'drive' => 'mysql',
+    'host' => 'localhost',
+    'dbname' => 'db_store',
+    'user' => 'brenno',
+    'pass' => '123'
 ]);
 
 # OpenSSL
-define('SECRET_IV', pack('a16', 'h3ll0w0rld@crypt'));
+/*define('SECRET_IV', pack('a16', 'h3ll0w0rld@crypt'));
 define('SECRET', pack('a16', 'h3ll0w0rld@s3c0ndcrypt'));
 
 # PHPMailer
@@ -31,4 +31,4 @@ define('MAIL', [
     'port' => 587,
     'from_name' => 'Brenno Duarte',
     'from_email' => 'brennoduarte2015@outlook.com'
-]);
+]);*/
