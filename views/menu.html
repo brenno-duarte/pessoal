@@ -16,7 +16,7 @@
   <meta name="ICBM" content="-6.371749, -39.304833" />
   <meta name="language" content="pt-br" />
   <meta name="author" content="Brenno Duarte de Lima">
-  <title>Brenno Duarte - Programador</title>
+  <title>{{ title }}</title>
   <link rel="icon" href="{{ base_url() }}/views/_img/logo/favicon.ico" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Bootstrap CSS -->
@@ -73,16 +73,19 @@
         <div class="collapse navbar-collapse" id="main-navbar">
           <ul class="navbar-nav mr-auto w-100 justify-content-end">
             <li class="nav-item">
+              <a class="nav-link" href="{{ path_for('home') }}">Início</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#servicos">Serviços</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projetos">Projetos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contatos">Contatos</a>
+              <a class="nav-link" href="#quemsoueu">Quem sou eu?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sistemas</a>
+              <a class="nav-link" href="https://bduartestore.com.br" target="_blank">Sistemas</a>
             </li>
           </ul>
         </div>
@@ -90,16 +93,16 @@
       <!-- Mobile Menu Start -->
       <ul class="wpb-mobile-menu">
         <li>
-          <a href="#">Serviços</a>
+          <a href="#servicos">Serviços</a>
         </li>
         <li>
-          <a href="#">Projetos</a>
+          <a href="#projetos">Projetos</a>
         </li>
         <li>
-          <a href="#">Contatos</a>
+          <a href="#quemsoueu">Quem sou eu?</a>
         </li>
         <li>
-          <a href="#">Sistemas</a>
+          <a href="https://bduartestore.com.br" target="_blank">Sistemas</a>
         </li>
       </ul>
       <!-- Mobile Menu End -->
@@ -143,8 +146,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <p>&copy; 2019 Material Studio, All right reserved. Designed with <i class="mdi mdi-heart"></i> by <a
-                href="#">UIdeck</a></p>
+            <p>&copy; 2020 Material Studio, Todos os direitos reservados</p>
           </div>
         </div>
       </div>

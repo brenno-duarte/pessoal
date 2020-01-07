@@ -28,10 +28,7 @@ class ComposerStaticInit7c997a8bc4fb081ee4114c9cb15302b2
         array (
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
-        ),
-        'I' => 
-        array (
-            'Interop\\Container\\' => 18,
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
         'F' => 
         array (
@@ -68,9 +65,9 @@ class ComposerStaticInit7c997a8bc4fb081ee4114c9cb15302b2
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
-        'Interop\\Container\\' => 
+        'PHPMailer\\PHPMailer\\' => 
         array (
-            0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
         'FastRoute\\' => 
         array (
@@ -79,13 +76,6 @@ class ComposerStaticInit7c997a8bc4fb081ee4114c9cb15302b2
     );
 
     public static $prefixesPsr0 = array (
-        'T' => 
-        array (
-            'Twig_' => 
-            array (
-                0 => __DIR__ . '/..' . '/twig/twig/lib',
-            ),
-        ),
         'P' => 
         array (
             'Pimple' => 

@@ -2,9 +2,28 @@
     margin-top: 0px;
 }
 
+
+.above-fold-text {
+    position: absolute; 
+    margin-top: 50px; 
+    list-style-type: none;
+}
+
 @media (max-width: 760px) {
     .imagem {
         margin-top: 50px;
+    }
+
+    #above {
+        font-size: 15px;
+    }
+
+    #main-name {
+        font-size: 20px;
+    }
+
+    .above-fold-text {
+        margin-top: 5px;
     }
 }
 

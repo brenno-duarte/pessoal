@@ -1,11 +1,36 @@
 {% extends 'menu.html' %}
 {% block content %}
 
-<img class="d-block w-100 slide img-fluid imagem" src="{{ base_url() }}/views/_img/inicio.webp" alt="Primeiro Slide">
+<section class="Material-about-section section-padding mb-3">
+  <ul class="above-fold-text text-dark h5 wow animated fadeInUp" id="above">
+    <li class="display-4 text-primary font-weight-bold mb-4 mt-5" id="main-name">Brenno Duarte -<br> Programador</li>
+    <li class="mb-2">Desenvolvemos sites</li>
+    <li class="mb-2">Sistemas web e desktop</li>
+    <li class="mb-2">Campanhas de marketing digital</li>
+    <li class="mb-2">Para pessoas físicas e jurídicas</li>
+    <li class="mb-2">Para pequenas e médias empresas</li>
+    <li class="mt-5">
+      <div class="col-md-12 text-center">
+        <a href="{{ path_for('orcamento') }}" class="animated4 btn btn-common" data-ripple-color="#000"><i class="material-icons mr-2">
+            attach_money
+          </i>Faça seu orçamento<div class="ripple-container"></div></a>
+      </div>
+    </li>
+  </ul>
+
+  <img class="d-block w-100 slide img-fluid imagem" src="{{ base_url() }}/views/_img/above-fold.png"
+    alt="Brenno Duarte de Lima Programador">
+</section>
 
 <!-- About Section -->
 <section class="Material-about-section section-padding" id="servicos">
   <div class="container">
+    <div class="row">
+      <!-- Section Titile -->
+      <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+        <h1 class="section-title">Serviços</h1>
+      </div>
+    </div>
     <div class="row">
       <!-- Single About -->
       <div class="col-md-6 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".2s">
@@ -48,6 +73,12 @@
 <section class="welcome-section section-padding section-dark">
   <div class="container" id="quemsoueu">
     <div class="row">
+      <!-- Section Titile -->
+      <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+        <h1 class="section-title">Quem sou eu?</h1>
+      </div>
+    </div>
+    <div class="row">
       <div class="col-md-12 col-lg-7 col-xs-12">
         <div class="Material-tab">
           <!-- Nav tabs -->
@@ -72,7 +103,8 @@
           <!-- Tab panes -->
           <div class="tab-content">
             <div class="tab-pane fade show active" id="business" role="tabpanel">
-              <p class="fonte">Me chamo Brenno Duarte de Lima, analista de sistemas (ADS) formado (2019) na Faculdade Vale do
+              <p class="fonte">Me chamo Brenno Duarte de Lima, analista de sistemas (ADS) formado (2019) na Faculdade
+                Vale do
                 Salgado (FVS) em Icó-CE e resido atualmente em Iguatu-CE. Sempre tive interesse em criar
                 coisas e me identifiquei muito com a área de T.I (Tecnologia da informação). Iniciei no mundo
                 da programação em 2015, aos 16 anos, aprendendo primeiramente algoritimos e em seguida Java
@@ -87,7 +119,8 @@
             </div>
             <div class="tab-pane fade" id="agency" role="tabpanel">
               <p class="fonte">Você pode visualizar meu currículo nos botões abaixo.</p>
-              <p><a href="{{ base_url() }}/views/Profile.pdf" class="animated4 btn btn-common">Visualizar currículo</a></p>
+              <p><a href="{{ base_url() }}/views/Profile.pdf" class="animated4 btn btn-common">Visualizar currículo</a>
+              </p>
               <p><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K2122329J7"
                   class="animated4 btn btn-common">Visualizar lattes</a></p>
             </div>
@@ -97,8 +130,8 @@
                 <div class="col-md-6">
                   <ul class="list-group">
                     <li class="list-group-item texto"><a href="https://www.facebook.com/brennoduarteprogramador/"
-                        target="_blank"><img class="img-i"
-                          src="{{ base_url() }}/views/assets/images/facebook-icon.png"> Facebook</a></li>
+                        target="_blank"><img class="img-i" src="{{ base_url() }}/views/assets/images/facebook-icon.png">
+                        Facebook</a></li>
                     <li class="list-group-item texto"><a href="https://www.instagram.com/brennoduarte_dev/"
                         target="_blank"><img class="img-i"
                           src="{{ base_url() }}/views/assets/images/instagram-icon.png"> Instagram</a></li>
@@ -108,24 +141,24 @@
                 <div class="col-md-6">
                   <ul class="list-group">
                     <li class="list-group-item texto"><a href="https://www.linkedin.com/in/brenno-d-09957112a/"
-                        target="_blank"><img class="img-i"
-                          src="{{ base_url() }}/views/assets/images/linkedin-icon.png"> Linkedin</a></li>
-                    <li class="list-group-item texto"><a href="mailto:brennoduarte2015@outlook.com"
-                        target="_blank"><img class="img-i" src="{{ base_url() }}/views/_img/icons/Email.png">
+                        target="_blank"><img class="img-i" src="{{ base_url() }}/views/assets/images/linkedin-icon.png">
+                        Linkedin</a></li>
+                    <li class="list-group-item texto"><a href="mailto:brennoduarte2015@outlook.com" target="_blank"><img
+                          class="img-i" src="{{ base_url() }}/views/_img/icons/Email.png">
                         E-mail</a></li>
                   </ul>
                 </div>
               </div>
-              <p style="margin-top: 10px;" class="fonte">Ou se preferir você pode visualizar nosso cartão de visitas</p>
-              <p><a href="{{ base_url() }}/views/Cartao_Brenno_Duarte.pdf" class="animated4 btn btn-common">Visualizar cartão de visitas</a></p>
+              <p class="fonte">Ou se preferir você pode visualizar nosso cartão de visitas</p>
+              <p><a href="{{ base_url() }}/views/Cartao_Brenno_Duarte.pdf" class="animated4 btn btn-common">Visualizar
+                  cartão de visitas</a></p>
             </div>
           </div>
         </div>
       </div>
       <div class="col-md-12 col-lg-5 col-xs-12 welcome-column">
         <div class="video-gallery">
-          <img class="img-fluid" src="{{ base_url() }}/views/_img/brenno-duarte-lima.webp"
-            alt="Brenno Duarte de Lima">
+          <img class="img-fluid" src="{{ base_url() }}/views/_img/brenno-duarte-lima.webp" alt="Brenno Duarte de Lima">
         </div>
       </div>
     </div>
@@ -145,7 +178,8 @@
     <!-- Services Widget Section -->
     <div class="row">
       <!-- Service Widgets -->
-      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 single-service-widget wow animated fadeInUp" data-wow-delay=".3s">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 single-service-widget wow animated fadeInUp"
+        data-wow-delay=".3s">
         <div class="media">
           <div class="media-body">
             <img class="img-fluid tecno" src="{{ base_url() }}/views/_img/html5_css3.webp">
@@ -176,7 +210,7 @@
     <div class="row">
       <!-- Section Titile -->
       <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
-        <h1 class="section-title">Sistemas</h1>
+        <h1 class="section-title">Projetos</h1>
       </div>
     </div>
 
@@ -241,7 +275,8 @@
     <div class="row mt-5 wow animated fadeInUp" data-wow-delay=".6s">
       <!-- Button -->
       <div class="col-md-12 text-center">
-        <a href="#" class="animated4 btn btn-common" data-ripple-color="#000">Acessar loja oficial<div class="ripple-container"></div></a>
+        <a href="#" class="animated4 btn btn-common" data-ripple-color="#000">Acessar loja oficial<div
+            class="ripple-container"></div></a>
       </div>
     </div>
   </div>
