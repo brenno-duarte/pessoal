@@ -18,7 +18,6 @@ $app->get('/',function($request, $response){
 $app->get('/realizar-orcamento',function($request, $response){
     
     $submit = filter_input(INPUT_GET, 'submit');
-    var_dump($submit);
 
     return $this->view->render($response, 'contato.html', [
         'title' => "Brenno Duarte | Contato",

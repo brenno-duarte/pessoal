@@ -113,7 +113,7 @@
   <div>{% block content %}{% endblock %}</div>
 
     <!--Footer-->
-  <footer class="page-footer center-on-small-only  pt-0 footer-widget-container">
+  <footer class="page-footer center-on-small-only pt-0 footer-widget-container">
     <!--Footer Links-->
     <div class="container pt-5 mb-5">
       <div class="row">
@@ -137,6 +137,14 @@
           </ul>
         </div>
         <!--/.First column-->
+
+        <!--Second column-->
+        <div class="col-md-6 col-lg-3 col-xl-3 recent-widget">
+          <h3 class="footer-title">Localização</h3>
+          <p><a href="#" class="dark-grey-text">Rua Nelson de Souza Alencar</a></p>
+          <p><a href="#" class="dark-grey-text">Iguatu - Ceará</a></p>
+        </div>
+        <!--/.Second column-->
       </div>
     </div>
     <!--/.Footer Links-->
@@ -170,7 +178,8 @@
   <!-- End Preloader -->
 
   <!-- Optional JavaScript -->
-  <script src="{{ base_url() }}/views/assets/js/jquery-min.js"></script>
+  <script src="{{ base_url() }}/views/_js/jquery-3.4.1.min.js"></script>
+  <script src="{{ base_url() }}/views/_js/jquery.mask.min.js"></script>
   <script src="{{ base_url() }}/views/assets/js/popper.min.js"></script>
   <script src="{{ base_url() }}/views/assets/js/bootstrap.min.js"></script>
 
@@ -189,6 +198,9 @@
   <script src="{{ base_url() }}/views/assets/js/jquery.magnific-popup.min.js"></script>
   <script src="{{ base_url() }}/views/assets/js/jquery.slicknav.js"></script>
   <script src="{{ base_url() }}/views/assets/js/main.js"></script>
+  <script>
+      $("#fone").mask("(00) 00000-0000");
+  </script>
 
 </body>
 </html>
