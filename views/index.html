@@ -1,26 +1,26 @@
 {% extends 'menu.html' %}
 {% block content %}
 
-<section class="Material-about-section section-padding mb-3">
-  <ul class="above-fold-text text-dark h5 wow animated fadeInUp" id="above">
-    <li class="display-4 text-primary font-weight-bold mb-4 mt-5" id="main-name">Brenno Duarte -<br> Programador</li>
-    <li class="mb-2">&#9899; Geramos resultados para <br> você atrair mais clientes <br> para o seu negócio;</li>
-    <li class="mb-2">&#9899; Desenvolvemos sites;</li>
-    <li class="mb-2">&#9899; Sistemas web e desktop;</li>
-    <li class="mb-2">&#9899; Campanhas de marketing digital;</li>
-    <li class="mb-2">&#9899; Para pequenas e médias empresas.</li>
+<section class="Material-about-section section-padding">
+  <ul class="above-fold-text text-dark h5" id="above">
+    <li class="mb-4 mt-4 wow animated fadeInUp" id="main-name"><img
+        src="{{ base_url() }}/views/_img/logo/smwdigital-logo-2.png" alt="SMW Digital" class="img-fluid"
+        style="width: 65%;"></li>
+    <li class="mb-3 wow animated fadeInLeft" data-wow-delay="1s">&#9899; Geramos resultados para <br> você atrair mais
+      clientes <br> para o seu negócio;</li>
+    <li class="mb-3 wow animated fadeInLeft" data-wow-delay="2s">&#9899; Criação de sites e sistemas web;</li>
+    <li class="mb-3 wow animated fadeInLeft" data-wow-delay="3s">&#9899; Campanhas de marketing digital;</li>
+    <li class="mb-3 wow animated fadeInLeft" data-wow-delay="4s">&#9899; Tudo isso para pequenas e médias empresas.</li>
     <li class="mt-5">
-      <div class="col-md-12 text-center">
-        <a href="{{ path_for('orcamento') }}" class="animated4 btn btn-common" style="background-color: green;"
-          data-ripple-color="#000"><i class="material-icons mr-2">
-            attach_money
-          </i>Faça seu orçamento<div class="ripple-container"></div></a>
-      </div>
+      <a href="{{ path_for('orcamento') }}" class="animated4 btn btn-common btn-orcamento" data-ripple-color="#000"><i
+          class="material-icons mr-2">
+          attach_money
+        </i>Realizar orçamento<div class="ripple-container"></div></a>
     </li>
   </ul>
 
   <img class="d-block w-100 slide img-fluid imagem" src="{{ base_url() }}/views/_img/above-fold.png"
-    alt="Brenno Duarte de Lima Programador">
+    alt="SMW Digital">
 </section>
 
 <!-- About Section -->
@@ -39,7 +39,7 @@
         <div class="about-single">
           <i class="material-icons">poll</i>
           <h2 class="subtitle text-primary">Marketing Digital</h2>
-          <p>Campanhas de marketing digital para alavancar seu negócio</p>
+          <p class="h6">Campanhas de marketing digital para aumentar as vendas do seu negócio</p class="h6">
         </div>
       </div>
       <!-- Single About -->
@@ -47,7 +47,7 @@
         <div class="about-single">
           <i class="material-icons">computer</i>
           <h2 class="subtitle text-primary">Criação de sites</h2>
-          <p>Desenvolvimento de sites responsivos e com layout moderno</p>
+          <p class="h6">Desenvolvimento de sites que geram resultados para a sua empresa</p>
         </div>
       </div>
       <!-- Single About -->
@@ -55,15 +55,15 @@
         <div class="about-single">
           <i class="material-icons">web</i>
           <h2 class="subtitle text-primary">Criação de sistemas web</h2>
-          <p>Desenvolvimento de sistemas web profissional para sua empresa</p>
+          <p class="h6">Desenvolvimento de sistemas web profissional para automatizar as tarefas mais exigentes</p>
         </div>
       </div>
       <!-- Single About -->
       <div class="col-md-6 col-lg-3 col-xl-3 wow animated fadeInUp" data-wow-delay=".4s">
         <div class="about-single">
-          <i class="material-icons">desktop_windows</i>
-          <h2 class="subtitle text-primary">Criação de sistemas desktop</h2>
-          <p>Desenvolvimento de sistemas desktop profissional para sua empresa</p>
+          <i class="material-icons">search</i>
+          <h2 class="subtitle text-primary">SEO</h2>
+          <p class="h6">Seu site nos primeiros resultados de busca no Google para atrair mais clientes</p>
         </div>
       </div>
     </div>
@@ -72,101 +72,83 @@
 <!-- About Section End -->
 
 <!-- Welcome Section Start -->
-<section class="welcome-section section-padding section-dark">
+<section class="welcome-section section-padding section-dark degrade-1">
   <div class="container" id="quemsoueu">
     <div class="row">
       <!-- Section Titile -->
       <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
-        <h1 class="section-title">Quem sou eu?</h1>
+        <h1 class="section-title">Quem somos</h1>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12 col-lg-7 col-xs-12">
-        <div class="Material-tab">
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#business" role="tab"><i
-                  class="material-icons">people_outline</i></br>Quem sou eu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#startup" role="tab"><i
-                  class="material-icons">flash_on</i></br>Experiências</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#agency" role="tab"><i
-                  class="material-icons">ballot</i></br>Currículo</a>
-            </li>
-            <li class="nav-item" id="contatos">
-              <a class="nav-link" data-toggle="tab" href="#saas" role="tab"><i
-                  class="material-icons">call</i></br>Contatos</a>
-            </li>
-          </ul>
-          <!-- Tab panes -->
-          <div class="tab-content">
-            <div class="tab-pane fade show active" id="business" role="tabpanel">
-              <p class="fonte">Me chamo Brenno Duarte de Lima, analista de sistemas (ADS) formado (2019) na Faculdade
-                Vale do
-                Salgado (FVS) em Icó-CE e resido atualmente em Iguatu-CE. Sempre tive interesse em criar
-                coisas e me identifiquei muito com a área de T.I (Tecnologia da informação). Iniciei no mundo
-                da programação em 2015, aos 16 anos, aprendendo primeiramente algoritimos e em seguida Java
-                e em 2016 comecei a frequentar o curso de ADS.</p>
-            </div>
-            <div class="tab-pane fade" id="startup" role="tabpanel">
-              <p class="fonte">Tenho conhecimentos sobre marketing digital, documentação e
-                levantamento de requisitos e também sobre PHP e alguns de seus frameworks (Slim, DomPDF e
-                outros), HTML, CSS, banco de dados e Java. Possuo alguns cursos adicionais sobre o básico
-                ao avançado de programação front e back-end. Para ver alguns dos meus projetos veja <a
-                  href="https://github.com/brennoDuarte">meu repositório no github.</a></p>
-            </div>
-            <div class="tab-pane fade" id="agency" role="tabpanel">
-              <p class="fonte">Você pode visualizar meu currículo nos botões abaixo.</p>
-              <p><a href="{{ base_url() }}/views/Profile.pdf" class="animated4 btn btn-common">Visualizar currículo</a>
-              </p>
-              <p><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K2122329J7"
-                  class="animated4 btn btn-common">Visualizar lattes</a></p>
-            </div>
-            <div class="tab-pane fade" id="saas" role="tabpanel">
-              <p class="fonte">Abaixo estão meus contatos que mais utilizo:</p>
-              <div class="row">
-                <div class="col-md-6">
-                  <ul class="list-group">
-                    <li class="list-group-item texto"><a href="https://www.facebook.com/brennoduarteprogramador/"
-                        target="_blank"><img class="img-i" src="{{ base_url() }}/views/assets/images/facebook-icon.png">
-                        Facebook</a></li>
-                    <li class="list-group-item texto"><a href="https://www.instagram.com/brennoduarte_dev/"
-                        target="_blank"><img class="img-i"
-                          src="{{ base_url() }}/views/assets/images/instagram-icon.png"> Instagram</a></li>
-                  </ul>
-                </div>
+        <p class="h4 animated wow fadeInUp text-justify">Olá, somos uma micro-empresa de marketing digital e
+          desenvolvimento web. A idéia da SMW
+          Digital surgiu em 2018, primeiramente como um portfólio online com o nome de <strong>Brenno
+            Duarte - Programador</strong>. Porém acabamos expandindo nossos serviços, o que fez com
+          que esse nome perdesse sentindo. Então, em 2020, mudamos o nome para
+          <strong>SMW Digital</strong>.</p>
 
-                <div class="col-md-6">
-                  <ul class="list-group">
-                    <li class="list-group-item texto"><a href="https://www.linkedin.com/in/brenno-d-09957112a/"
-                        target="_blank"><img class="img-i" src="{{ base_url() }}/views/assets/images/linkedin-icon.png">
-                        Linkedin</a></li>
-                    <li class="list-group-item texto"><a href="mailto:brennoduarte2015@outlook.com" target="_blank"><img
-                          class="img-i" src="{{ base_url() }}/views/_img/icons/Email.png">
-                        E-mail</a></li>
-                  </ul>
-                </div>
-              </div>
-              <p class="fonte">Ou se preferir você pode visualizar nosso cartão de visitas</p>
-              <p><a href="{{ base_url() }}/views/Cartao_Brenno_Duarte.pdf" class="animated4 btn btn-common">Visualizar
-                  cartão de visitas</a></p>
-            </div>
-          </div>
-        </div>
+        <p class="h4 animated wow fadeInUp text-justify mt-3">O <strong>S</strong> vem de serviços, <strong>M</strong>
+          de marketing e o <strong>W</strong> de web,
+          mostrando que nosso foco é 100% no online. Com a evolução da internet nos últimos anos e vários tipos de
+          serviços migrando para a mesma, acreditamos que o futuro está no digital, por isso todos os nossos
+          serviços estão voltados diretamente para a web.</p>
       </div>
       <div class="col-md-12 col-lg-5 col-xs-12 welcome-column">
         <div class="video-gallery">
-          <img class="img-fluid" src="{{ base_url() }}/views/_img/brenno-duarte-lima.webp" alt="Brenno Duarte de Lima">
+          <img class="img-fluid h4 animated wow fadeInRight" src="{{ base_url() }}/views/_img/desc.png"
+            alt="SMW Digital">
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- Welcome Section End -->
+
+<!-- About Section -->
+<section class="Material-about-section section-padding mt-5" id="servicos">
+  <div class="container">
+    <div class="row">
+      <!-- Section Titile -->
+      <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+        <h1 class="section-title">Campanhas de Marketing digital</h1>
+        <p class="h5 mb-5 text-center">Abaixo estão listados as ferramentas onde são realizadas as campanhas de
+          marketing digital</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Single About -->
+      <div class="col-md-6 col-lg-4 col-xl-4 wow animated fadeInUp" data-wow-delay=".2s">
+        <div class="about-single">
+          <img class="img-fluid" src="{{ base_url() }}/views/_img/icons/Facebook.png" alt="ads smw digital">
+          <h2 class="subtitle text-dark">Facebook Ads</h2>
+          <p class="h6">Campanhas no Facebook para atrair mais pessoas para o seu negócio</p>
+        </div>
+      </div>
+      <!-- Single About -->
+      <div class="col-md-6 col-lg-4 col-xl-4 wow animated fadeInUp" data-wow-delay=".2s">
+        <div class="about-single">
+          <img class="img-fluid" src="{{ base_url() }}/views/_img/icons/Instagram.png" alt="ads smw digital">
+          <h2 class="subtitle text-dark">Instagram</h2>
+          <p class="h6">Atraia mais visibilidade para a sua empresa com campanhas no Instagram</p>
+        </div>
+      </div>
+      <!-- Single About -->
+      <div class="col-md-6 col-lg-4 col-xl-4 wow animated fadeInUp" data-wow-delay=".3s">
+        <div class="about-single">
+          <img class="img-fluid" style="width: 40%;" src="{{ base_url() }}/views/_img/icons/Google.png"
+            alt="ads smw digital">
+          <h2 class="subtitle text-dark">Google</h2>
+          <p class="h6">Aumente as chances de ser encontrado quando as pessoas pesquisarem sobre o assunto do seu
+            negócio</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- About Section End -->
 
 <!-- Services Section -->
 <section class="Material-service-section section-padding">
@@ -204,8 +186,6 @@
 </section>
 <!-- Services Section End -->
 
-
-
 <!-- Our BLog Section -->
 <section class="Material-blog-section section-padding" id="projetos">
   <div class="container">
@@ -230,8 +210,8 @@
           <!-- Post Meta -->
           <div class="post-meta">
             <!-- Title -->
-            <h2 class="subtitle">Clinicalsys</h2>
-            <p>Sistema para consultório médico e marcação de
+            <h2 class="subtitle text-dark">Clinicalsys</h2>
+            <p class="h6 text-justify">Sistema para consultório médico e marcação de
               consultas, com cadastro de pacientes, médicos, convênios e uma área
               administrativa para cadastrar secretárias e emitir relatórios.</p>
           </div>
@@ -250,8 +230,9 @@
           <!-- Post Meta -->
           <div class="post-meta">
             <!-- Title -->
-            <h2 class="subtitle">FECAD</h2>
-            <p>Sistema de gerenciamento de contratos administrativos, podendo contratar e renovar
+            <h2 class="subtitle text-dark">FECAD</h2>
+            <p class="h6 text-justify">Sistema de gerenciamento de contratos administrativos, podendo contratar e
+              renovar
               contratos de licitações e fazer aditivos contratuais.</p>
           </div>
         </article>
@@ -268,8 +249,9 @@
           <!-- Post Meta -->
           <div class="post-meta">
             <!-- Title -->
-            <h2 class="subtitle">ControlVCE</h2>
-            <p>Sistema de vendas, controle de estoque e fluxo de caixa, podendo emitir relatórios mensais.</p>
+            <h2 class="subtitle text-dark">ControlVCE</h2>
+            <p class="h6 text-justify">Sistema de vendas, controle de estoque e fluxo de caixa, podendo emitir
+              relatórios mensais.</p>
           </div>
         </article>
       </div>
@@ -284,5 +266,62 @@
   </div>
 </section>
 <!-- Our BLog Section End -->
+
+<!-- Services Section -->
+<section class="Material-service-section section-padding">
+  <div class="container">
+    <div class="row">
+      <!-- Section Titile -->
+      <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+        <h1 class="section-title">Entrar em contato</h1>
+      </div>
+    </div>
+    <!-- Services Widget Section -->
+
+    <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+      <p class="mb-4 mt-4 h4 text-center wow animated fadeInUp">Caso tenha se interessado pelos nossos serviços, por
+        favor utilize o formulário abaixo</p>
+
+      {% if submit %}
+      <p class="text-success h3 wow animated fadeInUp text-center">Mensagem enviada!</p>
+      {% endif %}
+
+      <div class="form-group label-floating">
+        <label class="control-label" for="name">Nome completo</label>
+        <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+        <div class="help-block with-errors"></div>
+      </div>
+
+      <div class="form-group label-floating">
+        <label class="control-label" for="email">E-mail</label>
+        <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+        <div class="help-block with-errors"></div>
+      </div>
+
+      <div class="form-group label-floating">
+        <label for="msgSubject" class="control-label">Telefone</label>
+        <input class="form-control" id="fone" type="text" name="fone" required
+          data-error="Please enter your message subject">
+        <div class="help-block with-errors"></div>
+      </div>
+
+      <div class="form-group label-floating">
+        <label for="message" class="control-label">Mensagem</label>
+        <textarea class="form-control" rows="8" id="message" name="message" required
+          data-error="Write your message"></textarea>
+        <div class="help-block with-errors"></div>
+      </div>
+
+      <div class="form-submit mt-4">
+        <button class="btn btn-common" type="submit" id="form-submit"><i
+            class="material-icons mdi mdi-message-outline"></i> Enviar mensagem</button>
+        <div id="msgSubmit" class="h3 text-center hidden"></div>
+        <div class="clearfix"></div>
+      </div>
+    </form>
+
+  </div>
+</section>
+<!-- Services Section End -->
 
 {% endblock %}

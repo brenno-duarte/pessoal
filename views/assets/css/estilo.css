@@ -1,7 +1,10 @@
+.bg-menu {
+    background-color: #E8E8E8;
+}
+
 .imagem {
     margin-top: 0px;
 }
-
 
 .above-fold-text {
     position: absolute; 
@@ -9,9 +12,26 @@
     list-style-type: none;
 }
 
-@media (max-width: 760px) {
+strong {
+    font-weight: 600;
+}
+
+.degrade-1 {
+    background-image: linear-gradient(to bottom, #63B8FF, #B0E2FF) !important;
+}
+
+.degrade-2 {
+    background-image: linear-gradient(to bottom, #C6E2FF, #DCDCDC) !important;
+}
+
+.itens-menu {
+    font-weight: bold !important; 
+    font-size: 18px !important;
+}
+
+@media (max-width: 1200px) {
     .imagem {
-        margin-top: 50px;
+        margin-top: 5%;
     }
 
     #above {
@@ -24,6 +44,32 @@
 
     .above-fold-text {
         margin-top: 5px;
+    }
+}
+
+@media (max-width: 760px) {
+    .imagem {
+        margin-top: 20%;
+    }
+
+    #above {
+        margin-top: 10% !important;
+        font-size: 15px;
+        margin-left: -30px;
+    }
+
+    #main-name {
+        font-size: 20px;
+    }
+
+    .above-fold-text {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 490px) {
+    #servicos {
+        margin-top: 20%;
     }
 }
 
@@ -43,4 +89,12 @@
 
 .fonte {
     font-size: 17px;
+}
+
+.btn-orcamento {
+    background-color: green !important;
+}
+
+.btn-orcamento:hover {
+    background-color: green !important;
 }

@@ -9,8 +9,11 @@ use PHPMailer\PHPMailer\Exception;
 
 $app->get('/',function($request, $response){
    
+    $submit = filter_input(INPUT_GET, 'submit');
+
     return $this->view->render($response, 'index.html', [
-        'title' => "Brenno Duarte | Programador de sites e sistemas - Iguatu CE"
+        'title' => "SMW Digital | Marketing digital e souções web em Iguatu - CE",
+        'submit' => $submit
     ]);
 
 })->setName('home');
@@ -20,7 +23,7 @@ $app->get('/realizar-orcamento',function($request, $response){
     $submit = filter_input(INPUT_GET, 'submit');
 
     return $this->view->render($response, 'contato.html', [
-        'title' => "Brenno Duarte | Contato",
+        'title' => "SMW Digital | Contato",
         'submit' => $submit
     ]);
 
