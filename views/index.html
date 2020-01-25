@@ -3,24 +3,22 @@
 
 <section class="Material-about-section section-padding">
   <ul class="above-fold-text text-dark h5" id="above">
-    <li class="mb-4 mt-4 wow animated fadeInUp" id="main-name"><img
+    <li class="mb-4 mt-4 wow animated fadeInDown" id="main-name"><img
         src="{{ base_url() }}/views/_img/logo/smwdigital-logo-2.png" alt="SMW Digital" class="img-fluid"
-        style="width: 65%;"></li>
+        style="width: 60%;"></li>
     <li class="mb-3 wow animated fadeInLeft" data-wow-delay="1s">&#9899; Geramos resultados para <br> você atrair mais
       clientes <br> para o seu negócio;</li>
     <li class="mb-3 wow animated fadeInLeft" data-wow-delay="2s">&#9899; Criação de sites e sistemas web;</li>
     <li class="mb-3 wow animated fadeInLeft" data-wow-delay="3s">&#9899; Campanhas de marketing digital;</li>
     <li class="mb-3 wow animated fadeInLeft" data-wow-delay="4s">&#9899; Tudo isso para pequenas e médias empresas.</li>
     <li class="mt-5">
-      <a href="{{ path_for('orcamento') }}" class="animated4 btn btn-common btn-orcamento" data-ripple-color="#000"><i
-          class="material-icons mr-2">
+      <a href="{{ path_for('orcamento') }}" class="btn-custom-1"><i class="material-icons mr-2">
           attach_money
-        </i>Realizar orçamento<div class="ripple-container"></div></a>
+        </i>Realizar orçamento</a>
     </li>
   </ul>
 
-  <img class="d-block w-100 slide img-fluid imagem" src="{{ base_url() }}/views/_img/above-fold.png"
-    alt="SMW Digital">
+  <img class="d-block w-100 slide img-fluid imagem" src="{{ base_url() }}/views/_img/above-fold.png" alt="SMW Digital">
 </section>
 
 <!-- About Section -->
@@ -84,7 +82,7 @@
       <div class="col-md-12 col-lg-7 col-xs-12">
         <p class="h4 animated wow fadeInUp text-justify">Olá, somos uma micro-empresa de marketing digital e
           desenvolvimento web. A idéia da SMW
-          Digital surgiu em 2018, primeiramente como um portfólio online com o nome de <strong>Brenno
+          Digital surgiu em 2019, primeiramente como um portfólio online com o nome de <strong>Brenno
             Duarte - Programador</strong>. Porém acabamos expandindo nossos serviços, o que fez com
           que esse nome perdesse sentindo. Então, em 2020, mudamos o nome para
           <strong>SMW Digital</strong>.</p>
@@ -157,6 +155,7 @@
       <!-- Section Titile -->
       <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
         <h1 class="section-title">Tecnologias utilizadas</h1>
+	<p class="h5 mb-5 text-center">Um conjunto de tecnologias que utilizamos na criação de sites e sistemas</p>
       </div>
     </div>
     <!-- Services Widget Section -->
@@ -170,7 +169,7 @@
             <img class="img-fluid tecno" src="{{ base_url() }}/views/_img/php7.webp">
             <img class="img-fluid tecno" src="{{ base_url() }}/views/_img/mysql.webp">
             <img class="img-fluid tecno" src="{{ base_url() }}/views/_img/jquery.webp">
-            <img class="img-fluid tecno" src="{{ base_url() }}/views/_img/oracle-java.webp">
+            <!--<img class="img-fluid tecno" src="{{ base_url() }}/views/_img/oracle-java.webp">-->
             <img class="img-fluid tecno" src="{{ base_url() }}/views/_img/apache.webp">
             <img class="img-fluid tecno" src="{{ base_url() }}/views/_img/slim.webp">
             <img class="img-fluid tecno" src="{{ base_url() }}/views/_img/composer.webp">
@@ -193,6 +192,8 @@
       <!-- Section Titile -->
       <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
         <h1 class="section-title">Projetos</h1>
+	<p class="h5 mb-5 text-center">Alguns dos sistemas que já criamos para automatizar diversas tarefas. 
+	Caso queira ver mais projetos acesse a nossa loja oficial no botão abaixo</p>
       </div>
     </div>
 
@@ -259,8 +260,7 @@
     <div class="row mt-5 wow animated fadeInUp" data-wow-delay=".6s">
       <!-- Button -->
       <div class="col-md-12 text-center">
-        <a href="#" class="animated4 btn btn-common" data-ripple-color="#000">Acessar loja oficial<div
-            class="ripple-container"></div></a>
+        <a href="https://bduartestore.com.br" target="_blank" class="btn-custom-2">Acessar loja oficial</a>
       </div>
     </div>
   </div>
@@ -268,7 +268,7 @@
 <!-- Our BLog Section End -->
 
 <!-- Services Section -->
-<section class="Material-service-section section-padding">
+<section class="Material-service-section section-padding degrade-2">
   <div class="container">
     <div class="row">
       <!-- Section Titile -->
@@ -313,8 +313,8 @@
       </div>
 
       <div class="form-submit mt-4">
-        <button class="btn btn-common" type="submit" id="form-submit"><i
-            class="material-icons mdi mdi-message-outline"></i> Enviar mensagem</button>
+        <button class="btn-custom-2" type="submit" id="form-submit"><i class="mdi mdi-message-outline"></i> Enviar
+          mensagem</button>
         <div id="msgSubmit" class="h3 text-center hidden"></div>
         <div class="clearfix"></div>
       </div>

@@ -21,11 +21,11 @@ strong {
 }
 
 .degrade-2 {
-    background-image: linear-gradient(to bottom, #C6E2FF, #DCDCDC) !important;
+    background-image: linear-gradient(to bottom, #F8F8FF, #DCDCDC) !important;
 }
 
 .itens-menu {
-    font-weight: bold !important; 
+    font-weight: 500 !important; 
     font-size: 18px !important;
 }
 
@@ -91,10 +91,31 @@ strong {
     font-size: 17px;
 }
 
-.btn-orcamento {
+.btn-custom-1 {
     background-color: green !important;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px black;
+    color: #FFF !important;
 }
 
-.btn-orcamento:hover {
-    background-color: green !important;
+.btn-custom-1:hover {
+    background-color: #00CD00 !important;
+}
+
+.btn-custom-2 {
+    background-color: #1E90FF !important;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px black;
+    color: #FFF !important;
+    font-family: 'Questrial', sans-serif !important;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.btn-custom-2:hover {
+    background-color: #00BFFF !important;
+    transition: 0.5s;
 }

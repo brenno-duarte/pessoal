@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");
 body {
     background: #fff;
     font-size: 14px;
@@ -16,7 +16,7 @@ body {
 }
 
 p, h1, h2, h3, h4, li {
-    font-family: 'Muli', sans-serif !important;
+    font-family: 'Questrial', sans-serif !important;
 }
 
 a {
@@ -78,7 +78,7 @@ a a:focus {
 
 .section-title {
     color: #333;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 38px;
     font-weight: 900;
     letter-spacing: 2px;
@@ -376,7 +376,7 @@ a.back-to-top:hover, a.back-to-top:focus {
     padding: 15px 0 18px 0;
     font-size: 14px;
     color: #fff;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Questrial', sans-serif;
     font-weight: 500;
     text-transform: capitalize;
     margin-left: 30px;
@@ -1769,6 +1769,11 @@ figure:hover figcaption {
 
 .footer-contact-widget ul li a .mdi-linkedin:hover {
     background: #0177B5;
+    transition: all 0.3s ease-in-out
+}
+
+.footer-contact-widget ul li a .mdi-youtube-play:hover {
+    background: #8B0000;
     transition: all 0.3s ease-in-out
 }
 
