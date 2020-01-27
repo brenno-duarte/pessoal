@@ -1,24 +1,34 @@
 {% extends 'menu.html' %}
 {% block content %}
 
-<section class="Material-about-section section-padding">
+<section class="Material-about-section section-padding degrade-3">
+  <div style="width: 100%;">
+    <img class="imagem img-fluid" src="{{ base_url() }}/views/_img/bnr2.png" alt="SMW Digital">
+  </div>
+
   <ul class="above-fold-text text-dark h5" id="above">
-    <li class="mb-4 mt-4 wow animated fadeInDown" id="main-name"><img
-        src="{{ base_url() }}/views/_img/logo/smwdigital-logo-2.png" alt="SMW Digital" class="img-fluid"
-        style="width: 60%;"></li>
-    <li class="mb-3 wow animated fadeInLeft" data-wow-delay="1s">&#9899; Geramos resultados para <br> você atrair mais
-      clientes <br> para o seu negócio;</li>
-    <li class="mb-3 wow animated fadeInLeft" data-wow-delay="2s">&#9899; Criação de sites e sistemas web;</li>
-    <li class="mb-3 wow animated fadeInLeft" data-wow-delay="3s">&#9899; Campanhas de marketing digital;</li>
-    <li class="mb-3 wow animated fadeInLeft" data-wow-delay="4s">&#9899; Tudo isso para pequenas e médias empresas.</li>
+    <li class="mb-4 mt-4 wow animated fadeInDown" id="main-name">
+      <img id="logo" src="{{ base_url() }}/views/_img/logo/smwdigital-logo-3.png" alt="SMW Digital"
+        class="img-fluid w-50">
+    </li>
+    <li class="mb-3 wow animated fadeInLeft" data-wow-delay="1s">
+      &#9899; Geramos resultados para <br> atrair mais clientes para <br> o seu negócio;
+    </li>
+    <li class="mb-3 wow animated fadeInLeft" data-wow-delay="2s">
+      &#9899; Criação de sites e sistemas web;
+    </li>
+    <li class="mb-3 wow animated fadeInLeft" data-wow-delay="3s">
+      &#9899; Campanhas de marketing digital;
+    </li>
+    <li class="mb-3 wow animated fadeInLeft" data-wow-delay="4s">
+      &#9899; Tudo isso para pequenas e médias empresas.
+    </li>
     <li class="mt-5">
-      <a href="{{ path_for('orcamento') }}" class="btn-custom-1"><i class="material-icons mr-2">
+      <a href="{{ CONTACT }}" class="btn-custom-1 wow animated fadeInRight"><i class="material-icons mr-2">
           attach_money
         </i>Realizar orçamento</a>
     </li>
   </ul>
-
-  <img class="d-block w-100 slide img-fluid imagem" src="{{ base_url() }}/views/_img/above-fold.png" alt="SMW Digital">
 </section>
 
 <!-- About Section -->
@@ -27,8 +37,10 @@
     <div class="row">
       <!-- Section Titile -->
       <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
-        <h1 class="section-title">Serviços</h1>
+        <h1 class="section-title">Serviços que oferecemos</h1>
       </div>
+      <p class="h5 mb-5 text-center wow animated fadeInLeft" data-wow-delay=".2s">Listamos abaixo os
+        serviços que realizamos na nossa empresa</p>
     </div>
 
     <div class="row">
@@ -71,7 +83,7 @@
 
 <!-- Welcome Section Start -->
 <section class="welcome-section section-padding section-dark degrade-1">
-  <div class="container" id="quemsoueu">
+  <div class="container" id="quemsomos">
     <div class="row">
       <!-- Section Titile -->
       <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
@@ -80,14 +92,15 @@
     </div>
     <div class="row">
       <div class="col-md-12 col-lg-7 col-xs-12">
-        <p class="h4 animated wow fadeInUp text-justify">Olá, somos uma micro-empresa de marketing digital e
-          desenvolvimento web situado em Iguatu - CE. A idéia da SMW
+        <p class="h4 animated wow fadeInUp text-justify quemsomos">Olá, somos uma micro-empresa de marketing digital e
+          soluções web situado em Iguatu - CE. A idéia da SMW
           Digital surgiu em 2019, primeiramente como um portfólio online com o nome de <strong>Brenno
             Duarte - Programador</strong>. Porém acabamos expandindo nossos serviços, o que fez com
           que esse nome perdesse sentindo. Então, em 2020, mudamos o nome para
           <strong>SMW Digital</strong>.</p>
 
-        <p class="h4 animated wow fadeInUp text-justify mt-3">O <strong>S</strong> vem de serviços, <strong>M</strong>
+        <p class="h4 animated wow fadeInUp text-justify mt-3 quemsomos">O <strong>S</strong> vem de serviços,
+          <strong>M</strong>
           de marketing e o <strong>W</strong> de web,
           mostrando que nosso foco é 100% no online. Com a evolução da internet nos últimos anos e vários tipos de
           serviços migrando para a mesma, acreditamos que o futuro está no digital, por isso todos os nossos
@@ -95,8 +108,8 @@
       </div>
       <div class="col-md-12 col-lg-5 col-xs-12 welcome-column">
         <div class="video-gallery">
-          <img class="img-fluid h4 animated wow fadeInRight" src="{{ base_url() }}/views/_img/desc.png"
-            alt="SMW Digital">
+          <img class="img-fluid h4 animated wow fadeInRight" data-wow-delay="1s"
+            src="{{ base_url() }}/views/_img/desc.png" alt="SMW Digital">
         </div>
       </div>
     </div>
@@ -110,10 +123,10 @@
     <div class="row">
       <!-- Section Titile -->
       <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
-        <h1 class="section-title">Campanhas de Marketing digital</h1>
-        <p class="h5 mb-5 text-center">Abaixo estão listados as ferramentas onde são realizadas as campanhas de
-          marketing digital</p>
+        <h1 class="section-title">Alcance o seu público-alvo</h1>
       </div>
+      <p class="h5 mb-5 text-center wow animated fadeInLeft" data-wow-delay=".2s">Abaixo estão listados
+        as ferramentas onde são realizadas as campanhas de marketing digital</p>
     </div>
 
     <div class="row">
@@ -155,8 +168,9 @@
       <!-- Section Titile -->
       <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
         <h1 class="section-title">Tecnologias utilizadas</h1>
-	<p class="h5 mb-5 text-center">Um conjunto de tecnologias que utilizamos na criação de sites e sistemas</p>
       </div>
+      <p class="h5 mb-5 text-center wow animated fadeInLeft" data-wow-delay=".2s">Um conjunto de
+        tecnologias que utilizamos <wbr> na criação de sites e sistemas</p>
     </div>
     <!-- Services Widget Section -->
     <div class="row">
@@ -186,15 +200,16 @@
 <!-- Services Section End -->
 
 <!-- Our BLog Section -->
-<section class="Material-blog-section section-padding degrade-2" id="projetos">
+<section class="Material-blog-section section-padding" id="projetos">
   <div class="container">
     <div class="row">
       <!-- Section Titile -->
       <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
-        <h1 class="section-title">Projetos</h1>
-	<p class="h5 mb-5 text-center">Alguns dos sistemas que já criamos para automatizar diversas tarefas. 
-	Caso queira ver mais projetos acesse a nossa loja oficial no botão abaixo</p>
+        <h1 class="section-title">Principais sistemas</h1>
       </div>
+      <p class="h5 mb-5 text-center wow animated fadeInLeft">Alguns dos sistemas que já criamos para
+        automatizar diversas tarefas. Caso queira ver mais projetos acesse a nossa loja oficial
+        no botão abaixo</p>
     </div>
 
     <div class="row">
@@ -260,7 +275,7 @@
     <div class="row mt-5 wow animated fadeInUp" data-wow-delay=".6s">
       <!-- Button -->
       <div class="col-md-12 text-center">
-        <a href="https://bduartestore.com.br" target="_blank" class="btn-custom-2">Acessar loja oficial</a>
+        <a href="https://bduartestore.com.br" target="_blank" class="btn-custom-2">Ver mais</a>
       </div>
     </div>
   </div>
@@ -275,51 +290,26 @@
       <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
         <h1 class="section-title">Entrar em contato</h1>
       </div>
+      <p class="mb-4 mt-4 h5 mb-5 text-center wow animated fadeInLeft" data-wow-delay=".2s">
+        Caso tenha se interessado pelos nossos serviços, por
+        favor utilize o botão abaixo e fale conosco
+      </p>
     </div>
     <!-- Services Widget Section -->
 
-    <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
-      <p class="mb-4 mt-4 h4 text-center wow animated fadeInUp">Caso tenha se interessado pelos nossos serviços, por
-        favor utilize o formulário abaixo</p>
-
-      {% if submit %}
-      <p class="text-success h3 wow animated fadeInUp text-center">Mensagem enviada!</p>
-      {% endif %}
-
-      <div class="form-group label-floating">
-        <label class="control-label" for="name">Nome completo</label>
-        <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
-        <div class="help-block with-errors"></div>
+    <div class="row wow animated fadeInUp text-center">
+      <div class="col-md-6">
+        <img src="{{ base_url() }}/views/_img/talking.png" class="img-fluid" alt="">
       </div>
 
-      <div class="form-group label-floating">
-        <label class="control-label" for="email">E-mail</label>
-        <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
-        <div class="help-block with-errors"></div>
+      <div class="col-md-6" style="margin-top: 100px;">
+        <a href="{{ CONTACT }}" class="btn-custom-3">Realizar consultoria gratuita*
+        </a>
+        <div class="mt-5">
+          <small class="text-dark obs font-weight-bold">*Apenas para a cidade de Iguatu - CE</small>
+        </div>
       </div>
-
-      <div class="form-group label-floating">
-        <label for="msgSubject" class="control-label">Telefone</label>
-        <input class="form-control" id="fone" type="text" name="fone" required
-          data-error="Please enter your message subject">
-        <div class="help-block with-errors"></div>
-      </div>
-
-      <div class="form-group label-floating">
-        <label for="message" class="control-label">Mensagem</label>
-        <textarea class="form-control" rows="8" id="message" name="message" required
-          data-error="Write your message"></textarea>
-        <div class="help-block with-errors"></div>
-      </div>
-
-      <div class="form-submit mt-4">
-        <button class="btn-custom-2" type="submit" id="form-submit"><i class="mdi mdi-message-outline"></i> Enviar
-          mensagem</button>
-        <div id="msgSubmit" class="h3 text-center hidden"></div>
-        <div class="clearfix"></div>
-      </div>
-    </form>
-
+    </div>
   </div>
 </section>
 <!-- Services Section End -->

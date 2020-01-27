@@ -3,11 +3,13 @@
 }
 
 .imagem {
-    margin-top: 0px;
+    position: absolute; 
+    right: 50px; 
+    top: 200px;
 }
 
 .above-fold-text {
-    position: absolute; 
+    /* position: absolute;  */
     margin-top: 50px; 
     list-style-type: none;
 }
@@ -17,19 +19,24 @@ strong {
 }
 
 .degrade-1 {
-    background-image: linear-gradient(to bottom, #63B8FF, #B0E2FF) !important;
+    background-image: linear-gradient(to bottom, #FFF, #B0E2FF, #FFF) !important;
 }
 
 .degrade-2 {
     background-image: linear-gradient(to bottom, #B0E2FF, #C6E2FF) !important;
 }
 
+.degrade-3 {
+    background-image: linear-gradient(to bottom, #C6E2FF, #FFF) !important;
+}
+
 .itens-menu {
     font-weight: 500 !important; 
     font-size: 18px !important;
+    font-weight: 900 !important;
 }
 
-@media (max-width: 1200px) {
+/*@media (max-width: 1200px) {
     .imagem {
         margin-top: 5%;
     }
@@ -45,11 +52,19 @@ strong {
     .above-fold-text {
         margin-top: 5px;
     }
-}
+}*/
 
 @media (max-width: 760px) {
     .imagem {
-        margin-top: 20%;
+        right: 30px;
+        top: 150px;
+        width: 40%;
+    }
+
+    .quemsomos {
+        margin-top: 15px;
+        font-size: 18px;
+        text-align: center !important;
     }
 
     #above {
@@ -68,8 +83,12 @@ strong {
 }
 
 @media (max-width: 490px) {
-    #servicos {
-        margin-top: 20%;
+    #logo {
+        width: 60% !important;
+    }
+
+    .obs {
+        font-size: 15px;
     }
 }
 
@@ -94,13 +113,18 @@ strong {
 .btn-custom-1 {
     background-color: green !important;
     padding: 10px;
+    border: none;
     border-radius: 5px;
     box-shadow: 1px 3px 5px black;
     color: #FFF !important;
+    font-family: 'Questrial', sans-serif !important;
+    font-size: 20px;
+    transition: 0.5s;
 }
 
 .btn-custom-1:hover {
     background-color: #00CD00 !important;
+    transition: 0.5s;
 }
 
 .btn-custom-2 {
@@ -117,5 +141,22 @@ strong {
 
 .btn-custom-2:hover {
     background-color: #00BFFF !important;
+    transition: 0.5s;
+}
+
+.btn-custom-3 {
+    background-color: green !important;
+    padding: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px black;
+    color: #FFF !important;
+    font-family: 'Questrial', sans-serif !important;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.btn-custom-3:hover {
+    background-color: #00CD00 !important;
     transition: 0.5s;
 }

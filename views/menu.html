@@ -4,11 +4,10 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
-  content="Agência de marketing digital e soluções web em Iguatu - CE. Geramos resultados para você atrair mais 
-  clientes para o seu negócio" />
+  content="Micro-empresa de marketing digial e soluções web. Geramos resultados para você atrair mais 
+  clientes para o seu negócio em Iguatu - Ceará" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="msapplication-tap-highlight" content="no">
   <meta name="geo.region" content="BR-CE" />
@@ -16,7 +15,7 @@
   <meta name="geo.position" content="-6.371749;-39.304833" />
   <meta name="ICBM" content="-6.371749, -39.304833" />
   <meta name="language" content="pt-br" />
-  <meta name="author" content="Brenno Duarte de Lima">
+  <meta name="author" content="Brenno Duarte de Lima, SMW Digital">
   <title>{{ title }}</title>
   <link rel="icon" href="{{ base_url() }}/views/_img/logo/favicon.ico" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -46,7 +45,6 @@
 </head>
 
 <body>
-
   <!-- Header Start -->
   <header id="header">
     <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar nav-bg bg-menu mb-5" style="box-shadow: 0px 0px 15px black !important;">
@@ -72,13 +70,13 @@
               <a class="nav-link itens-menu" href="#servicos">Serviços</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link itens-menu" href="#quemsoueu">Quem somos</a>
+              <a class="nav-link itens-menu" href="#quemsomos">Quem somos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link itens-menu" href="#projetos">Projetos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link itens-menu" href="#contactForm">Contato</a>
+              <a class="nav-link itens-menu" href="{{ CONTACT }}">Contato</a>
             </li>
           </ul>
         </div>
@@ -89,13 +87,13 @@
           <a href="#servicos">Serviços</a>
         </li>
         <li>
-          <a href="#quemsoueu">Quem somos?</a>
+          <a href="#quemsomos">Quem somos?</a>
         </li>
         <li>
           <a href="#projetos">Projetos</a>
         </li>
         <li>
-          <a href="#contactForm">Contato</a>
+          <a href="{{ CONTACT }}">Contato</a>
         </li>
       </ul>
       <!-- Mobile Menu End -->
@@ -154,17 +152,19 @@
   </footer>
   <!--/.Footer-->
 
-  <a href="#" class="contact-call">
-    <div class="ripple-container"></div>
-    <i class="mdi mdi-whatsapp"></i>
-  </a>
+  <acronym title="Converse conosco no WhatsApp">
+    <div class="contact-call" id="whats">
+      <div class="ripple-container"></div>
+      <i class="mdi mdi-whatsapp"></i>
+    </div>
+  </acronym>
 
-  <!-- Back To Top
+  <!-- Back To Top-->
   <a href="#" class="back-to-top">
     <div class="ripple-container"></div>
     <i class="mdi mdi-arrow-up">
     </i>
-  </a> -->
+  </a> 
 
   <!-- Preloader -->
   <div id="preloader">
@@ -195,6 +195,9 @@
   <script src="{{ base_url() }}/views/assets/js/main.js"></script>
   <script>
       $("#fone").mask("(00) 00000-0000");
+      $("#whats").click(function () {
+        location.href='https://api.whatsapp.com/send?l=pt_pt&phone=5588997286802'
+      })
   </script>
 
 </body>
