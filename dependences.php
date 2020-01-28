@@ -26,9 +26,9 @@ $container['view'] = function ($container) {
 };
 
 # PERSONALIZAÇÃO DE ERROS, OCULTADO EM PRODUÇÃO
-/*$container['errorHandler'] = function ($container) {
+$container['errorHandler'] = function ($container) {
     return function ($request, $response, $exception) use ($container) {
         return $response->withHeader('Content-Type', 'text/html')
             ->write('<h1>Erro na requisição</h1><br>Houve um erro interno no servidor');
     };
-};*/
+};

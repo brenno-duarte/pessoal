@@ -1,23 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
+  <title>{{ seoMeta.title }}</title>
+
   <!-- Required meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-  content="Micro-empresa de marketing digial e soluções web. Geramos resultados para você atrair mais 
-  clientes para o seu negócio em Iguatu - Ceará" />
+  <meta name="description" content="{{ seoMeta.description }}" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="msapplication-tap-highlight" content="no">
+  <meta name="author" content="{{ seoMeta.author }}">
+
+  <!-- Localização -->
   <meta name="geo.region" content="BR-CE" />
   <meta name="geo.placename" content="Iguatu" />
   <meta name="geo.position" content="-6.371749;-39.304833" />
   <meta name="ICBM" content="-6.371749, -39.304833" />
   <meta name="language" content="pt-br" />
-  <meta name="author" content="Brenno Duarte de Lima, SMW Digital">
-  <title>{{ title }}</title>
+  
+  <!-- Open Graph -->
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="{{ seoOpen.url }}">
+  <meta property="og:title" content="{{ seoOpen.title }}">
+  <meta property="og:site_name" content="{{ seoOpen.site_name }}">
+  <meta property="og:description" content="{{ seoOpen.description }}">
+  <meta property="og:image" content="{{ seoOpen.image }}">
+  <meta property="og:imageAlt" content="{{ seoOpen.imageAlt }}">
+  <meta property="og:type" content="{{ seoOpen.type }}">
+  
+  <!-- Canonical Tag -->
+  <link rel="canonical" href="https://smwdigital.com.br">
+  <!-- Ícone do site -->
   <link rel="icon" href="{{ base_url() }}/views/_img/logo/favicon.ico" />
+  <!-- Ícones -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="{{ base_url() }}/views/assets/css/bootstrap.min.css">
@@ -194,7 +210,6 @@
   <script src="{{ base_url() }}/views/assets/js/jquery.slicknav.js"></script>
   <script src="{{ base_url() }}/views/assets/js/main.js"></script>
   <script>
-      $("#fone").mask("(00) 00000-0000");
       $("#whats").click(function () {
         location.href='https://api.whatsapp.com/send?l=pt_pt&phone=5588997286802'
       })
