@@ -9,4 +9,4 @@ if($_SERVER['REQUEST_URI'] == "/index.php"){
 }
 
 define('ROOT_PATH', dirname(__FILE__));
-define('CONTACT', 'https://api.whatsapp.com/send?l=pt_pt&phone=5588997286802');
+define('CONTACT', 'https://api.whatsapp.com/send?l=pt_pt&phone=5588997186408');
