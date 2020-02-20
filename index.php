@@ -39,4 +39,23 @@ $app->get('/',function($request, $response){
 
 })->setName('home');
 
+$app->get('/links',function($request, $response){
+
+    $meta = [
+        '',
+        '',
+        '',
+        'noindex',
+        'nofollow'
+    ];
+
+    $seoMeta = SEOTags::metaTags($meta);
+
+    return $this->view->render($response, 'links.html', [
+        'seoMeta' => $seoMeta,
+        'CONTACT' => CONTACT
+    ]);
+
+})->setName('links');
+
 $app->run();

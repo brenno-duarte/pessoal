@@ -110,6 +110,10 @@ strong {
     font-size: 17px;
 }
 
+.fonte-2 {
+    font-size: 25px;
+}
+
 .btn-custom-1 {
     background-color: green !important;
     padding: 10px;
