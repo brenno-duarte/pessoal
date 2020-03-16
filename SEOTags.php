@@ -24,7 +24,7 @@ class SEOTags {
         "imageAlt" => ''
     ];
 
-    public static function openGraph($args = []){
+    public function openGraph($args = []){
         self::$tags['type'] = $args[0];
         self::$tags['title'] = $args[1];
         self::$tags['site_name'] = $args[2];
@@ -36,13 +36,13 @@ class SEOTags {
         return self::$tags;
     }
 
-    public static function linkTags($args = []){
+    public function linkTags($args = []){
         self::$link['canonical'] = $args[0];
 
         return self::$link;
     }
 
-    public static function metaTags($args = []){
+    public function metaTags($args = []){
         self::$meta['title'] = $args[0];
         self::$meta['description'] = $args[1];
         self::$meta['author'] = $args[2];

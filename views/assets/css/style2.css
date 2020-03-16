@@ -385,7 +385,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .top-nav-collapse .nav-link {
-    color: #333 !important;
+    color: #333;
     margin-top: 0
 }
 
@@ -402,7 +402,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .nav-bg .navbar-nav .nav-link {
-    color: #333 !important
+    color: #333;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -1770,6 +1770,15 @@ figure:hover figcaption {
     line-height: 40px;
     border-radius: 2px;
     transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 760px) {
+    .footer-contact-widget ul li a .mdi {
+        font-size: 30px;
+        padding-top: 20px;
+        width: 80px;
+        height: 80px;
+    }
 }
 
 .footer-contact-widget ul li a .mdi:hover {

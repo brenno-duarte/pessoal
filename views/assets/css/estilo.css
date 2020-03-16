@@ -90,6 +90,34 @@ strong {
     .obs {
         font-size: 15px;
     }
+
+    .section-title {
+        font-size: 23px !important;
+    }
+
+    .subtitle {
+        font-size: 20px !important;
+    }
+    
+    .h4 {
+        font-size: 20px;
+    }
+
+    .h5, .h6 {
+        font-size: 18px;
+    }
+
+    .img-resp {
+        width: 50%;
+    }
+
+    .above-text {
+        font-size: 18px;
+    }
+
+    .footer-info {
+        font-size: 18px;
+    }
 }
 
 .texto {

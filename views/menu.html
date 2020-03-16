@@ -65,7 +65,7 @@
   <!-- Google Seach Console -->  
   <meta name="google-site-verification" content="njXArJ1TBA6Zd3XIIlsXMD91xMMKa-mJacdoqsM7YMo" />
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157127524-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -73,9 +73,7 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-157127524-1');
-  </script>
-
-
+  </script>-->
 
 </head>
 
@@ -99,19 +97,19 @@
         <div class="collapse navbar-collapse" id="main-navbar">
           <ul class="navbar-nav mr-auto w-100 justify-content-end">
             <li class="nav-item">
-              <a class="nav-link itens-menu" href="{{ path_for('home') }}">Início</a>
+              <a class="nav-link itens-menu text-dark" href="{{ path_for('home') }}">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link itens-menu" href="#servicos">Serviços</a>
+              <a class="nav-link itens-menu text-dark" href="#servicos">Serviços</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link itens-menu" href="#quemsomos">Quem somos</a>
+              <a class="nav-link itens-menu text-dark" href="#quemsomos">Quem somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link itens-menu" href="#projetos">Projetos</a>
+              <a class="nav-link itens-menu text-dark" href="#projetos">Projetos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link itens-menu" href="{{ CONTACT }}">Contato</a>
+              <a class="nav-link itens-menu text-dark" href="{{ CONTACT }}">Contato</a>
             </li>
           </ul>
         </div>
@@ -146,7 +144,7 @@
         <!--First column-->
         <div class="col-md-6 col-lg-3 col-xl-3 footer-contact-widget">
           <h3 class="footer-title">Redes Sociais</h3>
-          <p>Siga-nos nas nossas redes sociais</p>
+          <p class="footer-info">Siga-nos nas nossas redes sociais</p>
           <ul>
             <li>
               <a href="https://www.facebook.com/smwdigitaloficial/"><i class="mdi mdi-facebook"></i></a>
@@ -164,8 +162,8 @@
         <!--Second column-->
         <div class="col-md-6 col-lg-3 col-xl-3 recent-widget">
           <h3 class="footer-title">Localização</h3>
-          <p>Rua Nelson de Souza Alencar</p>
-          <p>Iguatu - Ceará</p>
+          <p class="footer-info">Rua Nelson de Souza Alencar</p>
+          <p class="footer-info">Iguatu - Ceará</p>
         </div>
         <!--/.Second column-->
       </div>

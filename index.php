@@ -8,7 +8,7 @@ $app->get('/',function($request, $response){
 
     $meta = [
         'SMW Digital | Marketing digital e soluções web em Iguatu - CE',
-        'Micro-empresa de marketing digial e soluções web. Geramos resultados para você atrair mais clientes para o seu negócio em Iguatu - Ceará',
+        'Micro-agência de marketing digial e desenvolvimento web em Iguatu - Ceará. Acesse o nosso site e conheça mais sobre nós.',
         'Brenno Duarte de Lima, SMW Digital',
         'index',
         'follow'
@@ -18,7 +18,7 @@ $app->get('/',function($request, $response){
         'website',
         'SMW Digital | Marketing digital e soluções web em Iguatu - CE',
         'SMW Digital | Marketing digital e soluções web em Iguatu - CE',
-        'Micro-empresa de marketing digial e soluções web. Geramos resultados para você atrair mais clientes para o seu negócio em Iguatu - Ceará',
+        'Micro-agência de marketing digial e desenvolvimento web em Iguatu - Ceará. Geramos resultados para você atrair mais clientes para o seu negócio',
         'https://smwdigital.com.br',
         'https://smwdigital.com.br/views/_img/og-face.png',
         'SMW Digital'
@@ -26,14 +26,12 @@ $app->get('/',function($request, $response){
 
     $canonical = "https://smwdigital.com.br";
 
-    $seoMeta = SEOTags::metaTags($meta);
-    $seoOpen = SEOTags::openGraph($open);
-    $seoLink = SEOTags::linkTags($canonical);
+    $seo = new SEOTags();
 
     return $this->view->render($response, 'index.html', [
-        'seoMeta' => $seoMeta,
-        'seoOpen' => $seoOpen,
-        'seoLink' => $seoLInk,
+        'seoMeta' => $seo->metaTags($meta),
+        'seoOpen' => $seo->openGraph($open),
+        'seoLink' => $seo->linkTags($canonical),
         'CONTACT' => CONTACT
     ]);
 
@@ -46,13 +44,12 @@ $app->get('/links',function($request, $response){
         '',
         '',
         'noindex',
-        'nofollow'
+        'follow'
     ];
-
-    $seoMeta = SEOTags::metaTags($meta);
+    $seo = new SEOTags();
 
     return $this->view->render($response, 'links.html', [
-        'seoMeta' => $seoMeta,
+        'seoMeta' => $seo->metaTags($meta),
         'CONTACT' => CONTACT
     ]);
 
