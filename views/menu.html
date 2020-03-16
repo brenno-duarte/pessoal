@@ -20,6 +20,7 @@
   <meta name="ICBM" content="-6.371749, -39.304833" />
   <meta name="language" content="pt-br" />
   
+  {% if seoOpen %}
   <!-- Open Graph -->
   <meta property="og:locale" content="pt_BR">
   <meta property="og:url" content="{{ seoOpen.url }}">
@@ -29,6 +30,7 @@
   <meta property="og:image" content="{{ seoOpen.image }}">
   <meta property="og:imageAlt" content="{{ seoOpen.imageAlt }}">
   <meta property="og:type" content="{{ seoOpen.type }}">
+  {% endif %}
   
   <!-- Canonical Tag -->
   <link rel="canonical" href="https://smwdigital.com.br">
@@ -63,7 +65,7 @@
   <!-- Google Seach Console -->  
   <meta name="google-site-verification" content="njXArJ1TBA6Zd3XIIlsXMD91xMMKa-mJacdoqsM7YMo" />
 
-  <!-- Global site tag (gtag.js) - Google Analytics 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157127524-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -71,7 +73,9 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-157127524-1');
-  </script>-->
+  </script>
+
+
 
 </head>
 
@@ -145,10 +149,10 @@
           <p>Siga-nos nas nossas redes sociais</p>
           <ul>
             <li>
-              <a href="https://www.facebook.com/brennoduarteprogramador/"><i class="mdi mdi-facebook"></i></a>
+              <a href="https://www.facebook.com/smwdigitaloficial/"><i class="mdi mdi-facebook"></i></a>
             </li>
             <li>
-              <a href="https://github.com/brennoDuarte"><i class="mdi mdi-instagram"></i></a>
+              <a href="https://www.instagram.com/smwdigital/"><i class="mdi mdi-instagram"></i></a>
             </li>
             <li>
               <a href="https://www.youtube.com/channel/UCk6qDh5y4M_vcnThjMbzHNw"><i class="mdi mdi-youtube-play"></i></a>
