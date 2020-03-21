@@ -1,5 +1,9 @@
 .bg-menu {
-    background-color: #E8E8E8;
+    background-color: #E8E8E8 !important;
+}
+
+.shadow-menu {
+    box-shadow: 0px 0px 10px black !important;
 }
 
 .imagem {
@@ -147,7 +151,7 @@ strong {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    box-shadow: 1px 3px 5px black;
+    box-shadow: 1px 3px 3px #828282;
     color: #FFF !important;
     font-family: 'Questrial', sans-serif !important;
     font-size: 20px;
@@ -164,7 +168,7 @@ strong {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    box-shadow: 1px 3px 5px black;
+    box-shadow: 1px 3px 3px #828282;
     color: #FFF !important;
     font-family: 'Questrial', sans-serif !important;
     font-size: 20px;
@@ -181,7 +185,7 @@ strong {
     padding: 30px;
     border: none;
     border-radius: 5px;
-    box-shadow: 1px 3px 5px black;
+    box-shadow: 1px 3px 3px #828282;
     color: #FFF !important;
     font-family: 'Questrial', sans-serif !important;
     font-size: 20px;

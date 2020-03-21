@@ -4,7 +4,7 @@ require_once 'vendor/autoload.php';
 
 $app = new \Slim\App([
     'settings' => [
-        'displayErrorDetails' => false
+        'displayErrorDetails' => true
     ]
 ]);
 
@@ -25,10 +25,14 @@ $container['view'] = function ($container) {
     return $view;
 };
 
+$container['flash'] = function () {
+    return new \Slim\Flash\Messages();
+};
+
 # PERSONALIZAÇÃO DE ERROS, OCULTADO EM PRODUÇÃO
-$container['errorHandler'] = function ($container) {
+/*$container['errorHandler'] = function ($container) {
     return function ($request, $response, $exception) use ($container) {
         return $response->withHeader('Content-Type', 'text/html')
             ->write('<h1>Erro na requisição</h1><br>Houve um erro interno no servidor');
     };
-};
+};*/

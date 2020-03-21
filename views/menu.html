@@ -32,6 +32,7 @@
   <meta property="og:type" content="{{ seoOpen.type }}">
   {% endif %}
   
+  <link rel="image_src" href="{{ base_url() }}/views/_img/og-face.png">
   <!-- Canonical Tag -->
   <link rel="canonical" href="https://smwdigital.com.br">
   <!-- Ícone do site -->
@@ -80,7 +81,7 @@
 <body>
   <!-- Header Start -->
   <header id="header">
-    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar nav-bg bg-menu mb-5" style="box-shadow: 0px 0px 15px black !important;">
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar nav-bg bg-menu mb-5 shadow-menu">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -92,7 +93,7 @@
             <span class="mdi mdi-menu"></span>
           </button>
           <a class="navbar-brand" href="{{ path_for('home') }}"><img src="{{ base_url() }}/views/_img/logo/smwdigital-logo-1.png"
-              alt="SMW Digital"></a>
+              alt="SMW Digital" title="SMW Digital"></a>
         </div>
         <div class="collapse navbar-collapse" id="main-navbar">
           <ul class="navbar-nav mr-auto w-100 justify-content-end">
@@ -109,7 +110,10 @@
               <a class="nav-link itens-menu text-dark" href="#projetos">Projetos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link itens-menu text-dark" href="{{ CONTACT }}">Contato</a>
+              <a class="nav-link itens-menu text-dark" href="{{ path_for('blog') }}">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link itens-menu text-dark" href="#contato">Contato</a>
             </li>
           </ul>
         </div>
@@ -124,6 +128,9 @@
         </li>
         <li>
           <a href="#projetos">Projetos</a>
+        </li>
+        <li>
+          <a href="{{ path_for('blog') }}">Blog</a>
         </li>
         <li>
           <a href="{{ CONTACT }}">Contato</a>
@@ -147,13 +154,13 @@
           <p class="footer-info">Siga-nos nas nossas redes sociais</p>
           <ul>
             <li>
-              <a href="https://www.facebook.com/smwdigitaloficial/"><i class="mdi mdi-facebook"></i></a>
+              <a title="Facebook da SMW Digital" href="https://www.facebook.com/smwdigitaloficial/"><i class="mdi mdi-facebook"></i></a>
             </li>
             <li>
-              <a href="https://www.instagram.com/smwdigital/"><i class="mdi mdi-instagram"></i></a>
+              <a title="Instagram da SMW Digital" href="https://www.instagram.com/smwdigital/"><i class="mdi mdi-instagram"></i></a>
             </li>
             <li>
-              <a href="https://www.youtube.com/channel/UCk6qDh5y4M_vcnThjMbzHNw"><i class="mdi mdi-youtube-play"></i></a>
+              <a title="Youtube da BDuarte Store" href="https://www.youtube.com/channel/UCk6qDh5y4M_vcnThjMbzHNw"><i class="mdi mdi-youtube-play"></i></a>
             </li>
           </ul>
         </div>

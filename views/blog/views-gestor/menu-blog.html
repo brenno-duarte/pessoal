@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="pt_br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Brenno Duarte de Lima">
+    <meta name="robots" content="index, follow">
+    <title>{{ title }}</title>
+    <link rel="icon" href="{{ base_url() }}/views/blog/images/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Font awesome 5 -->
+    <link href="{{ base_url() }}/views/blog/fonts/fontawesome/css/fontawesome-all.min.css" type="text/css" rel="stylesheet">
+
+    <!-- custom style -->
+    <link href="{{ base_url() }}/views/blog/css/floating-labels.css" rel="stylesheet" type="text/css" />
+    <link href="{{ base_url() }}/views/blog/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="{{ base_url() }}/views/blog/css/simple-sidebar.css" rel="stylesheet" type="text/css" />
+    <link href="{{ base_url() }}/views/blog/css/ui.css?v=1.0" rel="stylesheet" type="text/css" />
+    <link href="{{ base_url() }}/views/blog/css/responsive.css" rel="stylesheet"
+        media="only screen and (max-width: 1200px)" />
+
+    <link href="{{ base_url() }}/views/blog/plugins/summernote/summernote-bs4.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-dark border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">
+                <a class="navbar-brand" href="{{ path_for('adminPainel') }}">
+                    <img class="logo d-inline-block align-top" src="{{ base_url() }}/views/blog/images/blog-control-logo-sm.png">
+                </a>
+            </div>
+            <div class="list-group list-group-flush">
+                <a href="{{ path_for('adminPainel') }}" class="list-group-item list-group-item-action bg-dark text-white">
+                    <i class="fas fa-file-alt"></i> Postagens
+                </a>
+                <a href="{{ path_for('adminPainelNovo') }}" class="list-group-item list-group-item-action bg-dark text-white">
+                    <i class="far fa-edit"></i> Novo post
+                </a>
+                <a href="{{ path_for('categorias') }}" class="list-group-item list-group-item-action bg-dark text-white">
+                    <i class="far fa-clipboard"></i> Categorias
+                </a>
+                <a href="{{ path_for('gerenciarUsu') }}" class="list-group-item list-group-item-action bg-dark text-white">
+                    <i class="far fa-user"></i> Usuários
+                </a>
+                <a href="{{ path_for('msg') }}" class="list-group-item list-group-item-action bg-dark text-white">
+                    <i class="far fa-user"></i> Mensagens
+                </a>
+                <a href="{{ path_for('sobre') }}" class="list-group-item list-group-item-action bg-dark text-white">
+                    <i class="fas fa-address-card"></i> Sobre
+                </a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark border-bottom">
+                <button class="btn btn-light" id="menu-toggle">
+                    <i class="fas fa-chevron-circle-left"></i> Menu lateral
+                </button>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item mr-3">
+                            <a class="nav-link pl-0 text-white" href="{{ path_for('blog') }}" target="_blank"><i
+                                    class="fas fa-home"></i> Ver blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle my-2 my-lg-0" data-toggle="dropdown" href="#"
+                                role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user text-white"></i> <span class="text-white" id="nome"></span>
+                            </a>
+                            <div class="dropdown-menu bg-dark dm-custom mt-2">
+                                <div class="p-3 center font-weight-bold">Olá, <span for="nome" id="nome1"></span></div>
+                                <hr>
+                                <a class="dm-custom dropdown-item" href="#">Meu perfil</a>
+                                <hr>
+                                <a class="dm-custom dropdown-item" href="{{ path_for('logout') }}">Sair</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="{{ base_url() }}/views/blog/js/jquery.cookie.js"></script>
+    <script src="{{ base_url() }}/views/blog/plugins/summernote/summernote-bs4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var nome = $.cookie('nomeAdm');
+            $('#nome').html(nome);
+            $('#nome1').html(nome);
+            $('#info').click(function () {
+                $('#infoV').show();
+            });
+            $("#con").mask("(00) 000000000");
+
+            $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+
+            $('#summernote').summernote({
+                placeholder: 'Hello Bootstrap 4',
+                tabsize: 1,
+                height: 400
+            });
+        });
+    </script>
+</body>
+
+</html>

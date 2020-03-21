@@ -1,0 +1,104 @@
+{% extends 'blog/views-gestor/menu-blog.html' %}
+{% block content %}
+
+<!-- ========================= SECTION MAIN END// ========================= -->
+
+<section class="section-content padding-y bg">
+	<div class="container">
+		<header class="section-heading">
+			<h1 class="title-section tamanho">Postagens</h1>
+
+			{% if msg1 %}
+			<div class="alert alert-success" role="alert">
+				{{ msg1 }}
+			</div>
+			{% endif %}
+
+			{% if msg2 %}
+			<div class="alert alert-success" role="alert">
+				{{ msg2 }}
+			</div>
+			{% endif %}
+
+			{% if msg3 %}
+			<div class="alert alert-success" role="alert">
+				{{ msg3 }}
+			</div>
+			{% endif %}
+
+			{% if msg4 %}
+			<div class="alert alert-danger" role="alert">
+				{{ msg4 }}
+			</div>
+			{% endif %}
+		</header>
+
+		<div class="row">
+			<main class="col-md-9">
+				<div class="card">
+					<div class="card-body">
+						<div class="col-12" style="margin-bottom: 10px;">
+							<a href="{{ path_for('adminPainelNovo') }}" class="btn btn-primary">Novo post</a>
+						</div>
+						<main class="col-md-12">
+							{% for n in noticias %}
+							<div class="col-md-12">
+								<article class="card card-product">
+									<div class="card-body">
+										<div class="row">
+											<article class="col-sm-12">
+												<h4 class="title">{{ n.titulo }}</h4>
+												<dl class="dlist-align mb-3 mt-3">
+													<dt class="font-weight-normal">Publicado:</dt>
+													<dd>{{ n.data_not | date('d/m/Y') }}</dd>
+												</dl>
+												<dl class="dlist-align">
+													<dt><a href="{{ path_for('adminPainelEditar', {'id': n.idNot}) }}"
+															class="btn btn-warning btn-sm">Editar</a></dt>
+													<dt><a href="{{ path_for('adminPainelExcluir', {'id': n.idNot}) }}"
+															onclick="return confirm('Deseja realmente excluir este post?')"
+															class="btn btn-danger btn-sm">Excluir</a></dt>
+													<dt><a href="{{ path_for('blogConteudo', {'id': n.idNot, 'titulo': n.titulo | replace({' ' : '-'})}) }}"
+															target="_blank" class="btn btn-secondary btn-sm">Ver post</a>
+													</dt>
+												</dl>
+											</article>
+										</div>
+									</div>
+								</article>
+							</div>
+							{% endfor %}
+							<nav>
+								<ul class="pagination justify-content-center">
+									<li class="page-item"><a class="page-link" href="posts?pag=1">Primeiro</a></li>
+									{% for valor in range(valorAnt1, valorAnt2) %}
+									{% if valor > 1 %}
+									<li class="page-item"><a class="page-link"
+											href="posts?pag={{ valor }}">{{ valor }}</a></li>
+									{% endif %}
+									{% endfor %}
+
+									<li class="page-item"><span class="page-link text-dark"
+											href="#">{{ pag_atual }}</span></li>
+
+									{% for valor in range(valorPost1, valorPost2) %}
+									{% if valor <= qntPag %}
+									<li class="page-item"><a class="page-link"
+											href="posts?pag={{ valor }}">{{ valor }}</a></li>
+									{% endif %}
+									{% endfor %}
+
+									<li class="page-item"><a class="page-link" href="posts?pag={{ qntPag }}">Último</a>
+									</li>
+								</ul>
+							</nav>
+						</main>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+</section>
+<!-- ========================= SECTION CONTENT END// ========================= -->
+
+{% endblock %}

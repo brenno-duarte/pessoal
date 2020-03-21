@@ -2,57 +2,21 @@
 
 require 'Config.php';
 require 'dependences.php';
-require 'SEOTags.php';
 
-$app->get('/',function($request, $response){
+require_once ROOT_PATH. '/Sources/Controller/BlogController.php';
+require_once ROOT_PATH. '/Sources/Services/SEOTags.php';
+require_once ROOT_PATH. '/Sources/Controller/AdminController.php';
+require_once ROOT_PATH. '/Sources/Controller/MessageController.php';
+require_once ROOT_PATH. '/Sources/Controller/CategoryController.php';
+require_once ROOT_PATH. '/Sources/Model/Blog.php';
 
-    $meta = [
-        'SMW Digital | Marketing digital e soluções web em Iguatu - CE',
-        'Micro-agência de marketing digial e desenvolvimento web em Iguatu - Ceará. Acesse o nosso site e conheça mais sobre nós.',
-        'Brenno Duarte de Lima, SMW Digital',
-        'index',
-        'follow'
-    ];
-
-    $open = [
-        'website',
-        'SMW Digital | Marketing digital e soluções web em Iguatu - CE',
-        'SMW Digital | Marketing digital e soluções web em Iguatu - CE',
-        'Micro-agência de marketing digial e desenvolvimento web em Iguatu - Ceará. Geramos resultados para você atrair mais clientes para o seu negócio',
-        'https://smwdigital.com.br',
-        'https://smwdigital.com.br/views/_img/og-face.png',
-        'SMW Digital'
-    ];
-
-    $canonical = "https://smwdigital.com.br";
-
-    $seo = new SEOTags();
-
-    return $this->view->render($response, 'index.html', [
-        'seoMeta' => $seo->metaTags($meta),
-        'seoOpen' => $seo->openGraph($open),
-        'seoLink' => $seo->linkTags($canonical),
-        'CONTACT' => CONTACT
-    ]);
-
-})->setName('home');
-
-$app->get('/links',function($request, $response){
-
-    $meta = [
-        '',
-        '',
-        '',
-        'noindex',
-        'follow'
-    ];
-    $seo = new SEOTags();
-
-    return $this->view->render($response, 'links.html', [
-        'seoMeta' => $seo->metaTags($meta),
-        'CONTACT' => CONTACT
-    ]);
-
-})->setName('links');
+require 'router/rota-index.php';
+require 'router/rota-admin.php';
+require 'router/rota-usuarios.php';
+require 'router/rota-noticia.php';
+require 'router/rota-post.php';
+require 'router/rota-recSenha.php';
+require 'router/rota-categoria.php';
+require 'router/rota-msg.php';
 
 $app->run();
