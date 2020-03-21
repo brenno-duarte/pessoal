@@ -1922,8 +1922,8 @@ ul.recent-post li .post-text span {
 
 .call-to-action-section {
     padding: 60px 0;
-    background: url(../images/cta-bg.jpg) no-repeat scroll center center;
-    background-size: cover
+    background-color: #007FFB;
+    /* background: url(../images/cta-bg.jpg) no-repeat scroll center center; */
 }
 
 .call-to-action-section h1 {

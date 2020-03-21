@@ -1,0 +1,57 @@
+{% extends 'blog/views-gestor/menu-blog.html' %}
+{% block content %}
+
+<!-- ========================= SECTION MAIN END// ========================= -->
+
+<section class="section-content padding-y bg">
+    <div class="container">
+        <header class="section-heading">
+            <h1 class="title-section tamanho">{{ title }}</h1>
+
+            {% if msg %}
+            <div class="alert alert-success" role="alert">
+                {{ msg }}
+            </div>
+            {% endif %}
+
+        </header>
+
+        <div class="row">
+            <main class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <main class="col-md-12">
+                            <div class="col-md-12">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Nome</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Mensagem</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for m in message %}
+                                        <tr>
+                                            <th scope="row">{{ m.idmsg }}</th>
+                                            <td>{{ m.nameMsg }}</td>
+                                            <td>{{ m.emailMsg }}</td>
+                                            <td>{{ m.messageDesc }}</td>
+                                            <td><a href="{{ path_for('msgDel', {'id': m.idmsg}) }}"
+                                                    onclick="return confirm('Deseja realmente excluir esta mensagem?')"
+                                                    class="text-danger font-weight-bold">Excluir</a></td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

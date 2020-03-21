@@ -1,0 +1,46 @@
+{% extends 'blog/views-gestor/menu-blog.html' %}
+{% block content %}
+
+<section class="section-content padding-y bg">
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <div class="center margem text-dark">
+                <h1 class="tamanho"><i class="fa fa-user"></i> Alterar Senha</h1>
+            </div>
+            <form class="form-signin" action="{{ path_for('alterarSenha', {'id': idUsuario}) }}" method="POST" autocomplete="off">
+                
+                {% if msg1 %}
+                <div class="alert alert-success" role="alert">
+                    {{ msg1 }}
+                </div>
+                {% endif %}
+
+                {% if msg2 %}
+                <div class="alert alert-danger" role="alert">
+                    {{ msg2 }}
+                </div>
+                {% endif %}
+
+                <div class="form-group col-md-12">
+                    <label for="senha">Nova Senha</label>
+                    <input id="senha" class="form-control" type="password" placeholder="Nova Senha" name="senha" required autofocus>
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="cSenha">Confirmar senha</label>
+                    <input id="cSenha" class="form-control" type="password" placeholder="Confirmar senha" name="cSenha" required>
+                </div>
+
+                <input class="form-control" type="hidden" placeholder="Nome completo" name="idUsuario" value="{{ idUsuario }}" required>
+
+                <div class="form-group col-md-12">
+                    <button type="submit" class="btn btn-success">Alterar Senha</button>
+                </div>
+            </form>
+        </div>
+    </div>  
+</div>
+</section>
+<!-- ========================= SECTION CONTENT END// ========================= -->
+
+{% endblock %}

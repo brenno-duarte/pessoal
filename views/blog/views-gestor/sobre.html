@@ -1,0 +1,45 @@
+{% extends 'blog/views-gestor/menu-blog.html' %}
+{% block content %}
+
+<section class="section-content padding-y bg">
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <section class="bg-light mb-3" id="shotcut">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card border">
+                                <img class="card-img-top w-50 center mt-3"
+                                    src="{{ base_url() }}/views/blog/images/blog-control-logo.png">
+                                <div class="card-body tm-1">
+                                    <p class="card-text">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Desenvolvedor: <span
+                                                    class="font-weight-bold">{{ dev }}</span>
+                                                <a href="https://smwdigital.com.br" target="_blank">
+                                                    <i class="fas fa-external-link-alt float-right"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">Versão: <span
+                                                    class="font-weight-bold">{{ version }}</span
+                                                    class="font-weight-bold"></li>
+                                            <li class="list-group-item">Atualizado em: <span
+                                                    class="font-weight-bold">{{ dateVersion }}</span
+                                                    class="font-weight-bold"></li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p>
+                    &copy; Este software esta devidamente licenciado para a empresa {{ constant('LICENSED') }}.
+                    Todos os direitos reservados, {{ 'now'|date('Y') }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
