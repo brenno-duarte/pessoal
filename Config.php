@@ -31,7 +31,7 @@ define('DB_CONFIG', [
     'host' => '162.241.3.14',
     'dbname' => 'smwdig14_smwdigital',
     'user' => 'smwdig14_brenno',
-    'pass' => 'b3st1nth3w0rld@swmd1g1t4l'
+    'pass' => 'b3st1nth3w0rld@smwd1g1t4l'
 ]);
 
 # INFO DO SISTEMA
