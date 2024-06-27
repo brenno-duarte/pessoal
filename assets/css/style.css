@@ -11,10 +11,12 @@
 --------------------------------------------------------------*/
 
 :root {
-  --blue-1: #042498;
+  --blue-1: #0046a1;
   --blue-2: #087bff;
+  --green-1: #01c901;
+  --green-2: #01e401;
+  --yellow-1: #ffee00;
 }
-
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -40,12 +42,55 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-.paragraph-desc {
-  font-size: 20px !important;
+#background-video {
+  height: 100vh;
+  width: 100vw;
+  opacity: 10;
+  background: #0046a1;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 .profile {
+  width: 250px;
   background: rgba(55, 64, 85, 0.9);
+}
+
+.compass {
+  width: 350px;
+}
+
+.no-link {
+  color: var(--yellow-1) !important;
+  cursor: text;
+}
+
+.description {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+@media (max-width: 750px) {
+  #background-video {
+    display: none;
+  }
+
+  body {
+    background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 991px) {
+  .compass {
+    margin-top: 20px;
+    width: 150px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -163,7 +208,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #9bb2ff;
+  color: var(--yellow-1);
 }
 
 .navbar .dropdown ul {
@@ -337,16 +382,16 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/back.jpg") top center;
+  /* background: url("../img/back.jpg") top center; */
   background-size: cover;
   position: relative;
-  /* background: rgb(4, 36, 152);
-  background: linear-gradient(90deg, rgba(4, 36, 152, 1) 0%, rgba(4, 52, 219, 1) 51%, rgba(9, 4, 108, 1) 100%); */
+  /* background: rgb(0, 21, 99);
+  background: linear-gradient(90deg, rgb(0, 21, 99) 0%, rgb(2, 38, 165) 51%, rgb(0, 21, 99) 100%); */
 }
 
 #hero:before {
   content: "";
-  background: rgba(4, 36, 152, 0.4);
+  /* background: rgba(0, 27, 102, 0.4); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -355,13 +400,15 @@ h6 {
 }
 
 #hero .container {
-  text-align: center;
+  /* text-align: center; */
   padding-top: 50px;
 }
 
 @media (max-width: 992px) {
   #hero .container {
+    margin-top: 100px;
     padding-top: 0;
+    text-align: center;
   }
 }
 
@@ -376,10 +423,10 @@ h6 {
 #hero h2 {
   color: #eee;
   margin: 15px 0 0 0;
-  font-size: 22px;
+  font-size: 20px;
 }
 
-#hero .btn-get-started {
+.btn-get-started {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 15px;
@@ -388,14 +435,14 @@ h6 {
   padding: 9px 35px;
   border-radius: 50px;
   transition: 0.5s;
-  margin-top: 40px;
-  background-color: var(--blue-1);
+  background-color: var(--green-1);
   /* border: 2px solid var(--blue-1); */
-  color: #fff;
+  color: #0f0f0f;
 }
 
-#hero .btn-get-started:hover {
-  background: var(--blue-2);
+.btn-get-started:hover {
+  background-color: var(--green-2);
+  color: #0f0f0f;
 }
 
 @media (min-width: 1024px) {
@@ -427,9 +474,14 @@ section {
   padding: 60px 0;
 }
 
-.section-bg {
-  background-color: #f7f8fa;
+#main {
+  background: rgb(0, 21, 99);
+  background: linear-gradient(90deg, rgb(0, 21, 99) 0%, rgb(2, 38, 165) 51%, rgb(0, 21, 99) 100%);
 }
+
+/* .section-bg {
+  background-color: #f7f8fa;
+} */
 
 .section-title {
   text-align: center;
@@ -459,7 +511,7 @@ section {
 .section-title p {
   margin-bottom: 0;
   font-size: 14px;
-  color: #aab3c7;
+  color: #ffffff;
 }
 
 /*--------------------------------------------------------------
@@ -602,10 +654,12 @@ section {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
+  color: #fff;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
-  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+  background: var(--blue-1);
+  border-radius: 10px;
+  box-shadow: 0px 5px 90px 0px rgba(190, 219, 238, 0.05);
 }
 
 .services .icon-box .icon {
@@ -650,15 +704,15 @@ section {
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
 
-.services .iconbox-blue i {
-  color: #47aeff;
+.services .iconbox-green i {
+  color: #00c559;
 }
 
-.services .iconbox-blue:hover .icon {
-  background: #47aeff;
+.services .iconbox-green:hover .icon {
+  background: #00c559;
 }
 
-.services .iconbox-blue:hover .icon i {
+.services .iconbox-green:hover .icon i {
   color: #fff;
 }
 
@@ -726,8 +780,8 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: rgb(4, 36, 152);
-  background: linear-gradient(90deg, rgba(4, 36, 152, 1) 0%, rgba(4, 52, 219, 1) 51%, rgba(9, 4, 108, 1) 100%);
+  background: rgb(0, 28, 131);
+  background: linear-gradient(90deg, rgb(0, 26, 119) 0%, rgb(0, 35, 160) 51%, rgb(5, 0, 102) 100%);
   /* background: #414c64; */
   background-size: cover;
   padding: 60px 0;
@@ -1563,6 +1617,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #5490ff;
+  background: var(--blue-2);
+  color: #fff;
   text-decoration: none;
 }
