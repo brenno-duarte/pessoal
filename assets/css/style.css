@@ -42,7 +42,7 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-#background-video {
+.background-video {
   height: 100vh;
   width: 100vw;
   opacity: 10;
@@ -76,14 +76,14 @@ h6 {
 }
 
 @media (max-width: 750px) {
-  #background-video {
-    display: none;
+  .background-video {
+    background-color: var(--blue-2);
   }
 
-  body {
+  /* body {
     background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
     background-size: cover;
-  }
+  } */
 }
 
 @media (max-width: 991px) {
@@ -103,7 +103,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #042498;
+  background: #3c65fa;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -606,6 +606,23 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.who-we-are {
+  z-index: 1000;
+}
+
+/* .about {
+  background-image: url("/assets/img/background-2.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 2000px 1000px;
+  background-color: #0f0f0f;
+} */
+
+.about {
+  background: rgb(0, 131, 192);
+  background: linear-gradient(90deg, rgb(4, 77, 138) 0%, rgb(3, 103, 218) 51%, rgb(0, 96, 160) 100%);
+}
+
 .about h3 {
   font-weight: 700;
   font-size: 34px;
