@@ -2,328 +2,196 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Strado Consultoria - Análise de dados sem ser análise de dados</title>
 
-  <title>Strado Consultoria - Transformando Desafios em Oportunidades</title>
-  <meta name="description"
-    content="Especialistas em consultoria empresarial, oferecemos soluções estratégicas para impulsionar o crescimento e maximizar o sucesso do seu negócio. Conte com nossos consultores dedicados para transformar desafios em oportunidades.">
-  <meta name="keywords"
-    content="Consultoria Empresarial, Planejamento Estratégico, Gestão Estratégica, Plano de Negócio, Crescimento Empresarial">
-  <meta name="author" content="Strado Consultoria">
-  <meta name="robots" content="index, follow">
+	<meta name="description"
+		content="Transformamos a vida de empreendedores utilizando o poder dos dados para explorar novas oportunidades">
+	<meta name="keywords"
+		content="Análise de dados, Consultoria Empresarial, Planejamento Estratégico, Gestão Estratégica, Plano de Negócio, Crescimento Empresarial">
+	<meta name="author" content="Strado Consultoria">
+	<meta name="robots" content="index, follow">
 
-  <!-- Meta Open Graph (para otimizar compartilhamentos em redes sociais) -->
-  <meta property="og:title" content="Strado Consultoria - Consultoria estratégica para pequenas e médias empresas">
-  <meta property="og:description"
-    content="Especialistas em consultoria empresarial, oferecemos soluções estratégicas para impulsionar o crescimento e maximizar o sucesso do seu negócio.">
-  <!-- <meta property="og:image" content="[URL_da_Imagem]"> -->
-  <meta property="og:url" content="https://stradoconsultoria.com.br">
-  <meta property="og:type" content="website">
+	<!-- Meta Open Graph (para otimizar compartilhamentos em redes sociais) -->
+	<meta property="og:title" content="Strado Consultoria - Análise de dados sem ser análise de dados">
+	<meta property="og:description"
+		content="Transformamos a vida de empreendedores utilizando o poder dos dados para explorar novas oportunidades">
+	<!-- <meta property="og:image" content="[URL_da_Imagem]"> -->
+	<meta property="og:url" content="https://stradoconsultoria.com.br">
+	<meta property="og:type" content="website">
 
-  <!-- Link canonical -->
-  <link rel="canonical" href="https://stradoconsultoria.com.br">
+	<!-- Link canonical -->
+	<link rel="canonical" href="https://stradoconsultoria.com.br">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+	<!-- Favicons -->
+	<link href="media/favicon.png" rel="icon">
+	<link href="media/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/variable.css" />
+	<link rel="stylesheet" href="css/header.css" />
+	<link rel="stylesheet" href="css/navigation.css" />
+	<link rel="stylesheet" href="css/section.css" />
+	<link rel="stylesheet" href="css/footer.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+	<!-- <style>
+		#loader {
+			background-color: #f3f3f3 !important;
+		}
 
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-5NK84HQG');</script>
-  <!-- End Google Tag Manager -->
+		#preloader {
+			z-index: 1001;
+			border: 10px solid #f3f3f3;
+			/* Light grey */
+			border-top: 10px solid #0048e2;
+			/* Blue */
+			border-radius: 50%;
+			width: 120px;
+			height: 120px;
+			animation: spin 2s linear infinite;
+			margin: auto;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			position: fixed;
+		}
 
-  <!-- =======================================================
-  * Template Name: Baker
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+		@keyframes spin {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	</style> -->
+
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-5NK84HQG');</script>
+	<!-- End Google Tag Manager -->
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NK84HQG" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NK84HQG" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-transparent">
-    <div class="container d-flex align-items-center justify-content-between">
+	<!-- <div id="loader">
+		<div id="preloader"></div>
+	</div> -->
 
-      <!-- <h1 class="logo"><a href="index.html">Baker</a></h1> -->
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="index.html" class="logo"><img src="assets/img/logo-2.png" alt="" class="img-fluid"></a>
+	<div class="blur__overlay"></div>
+	<header class="header">
+		<a class="header__left" href="#">
+			<img class="header__logo" src="media/strado-logo-icon.svg" alt="" />
+		</a>
+		<ul class="header__middle">
+			<!-- <li>
+			<li><a class="header__nav__btn" href="#">Model S</a></li>
+			<li><a class="header__nav__btn" href="#">Model 3</a></li>
+			<li><a class="header__nav__btn" href="#">Model X</a></li>
+			<li><a class="header__nav__btn" href="#">Model Y</a></li>
+			<li><a class="header__nav__btn" href="#">solar roof</a></li>
+			<li><a class="header__nav__btn" href="#">solar panels</a></li>
+			</li> -->
+		</ul>
+		<div class="header__right">
+			<a class="header__nav__btn" href="#" style="cursor: none;"></a>
+			<a class="header__nav__btn" href="#" style="cursor: none;"></a>
+			<a class="header__nav__btn menu__btn" href="#" style="cursor: none;"></a>
+		</div>
+	</header>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#services">Serviços</a></li>
-          <li><a class="nav-link scrollto" href="#about">Sobre</a></li>
-          <li><a class="nav-link scrollto" href="#team">Seu consultor</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+	<nav class="navigation">
+		<div class="close__btn__container">
+			<img class="navigation__close__btn" src="media/close_icon.svg" alt="" />
+		</div>
+		<ul>
+			<li class="link__in__middle"><a class="nav__link" href="#">Model S</a></li>
+			<li class="link__in__middle"><a class="nav__link" href="#">Model 3</a></li>
+			<li class="link__in__middle"><a class="nav__link" href="#">Model X</a></li>
+			<li class="link__in__middle"><a class="nav__link" href="#">Model Y</a></li>
+			<li class="link__in__middle">
+				<a class="nav__link" href="#">Solar roofs</a>
+			</li>
+			<li class="link__in__middle">
+				<a class="nav__link" href="#">Solar panels</a>
+			</li>
+			<li><a class="nav__link" href="#">Existing Inventory </a></li>
+			<li><a class="nav__link" href="#">Used Inventory </a></li>
+			<li><a class="nav__link" href="#">Trade-In </a></li>
+			<li><a class="nav__link" href="#">Test drive </a></li>
+			<li><a class="nav__link" href="#">Powerwall </a></li>
+			<li><a class="nav__link" href="#">Commercial Energy </a></li>
+			<li><a class="nav__link" href="#">utilities </a></li>
+			<li><a class="nav__link" href="#">Charging</a></li>
+			<li><a class="nav__link" href="#">Find us</a></li>
+			<li><a class="nav__link" href="#">Support</a></li>
+			<li><a class="nav__link" href="#">Investor Relations</a></li>
+		</ul>
+	</nav>
 
-    </div>
-  </header><!-- End Header -->
+	<section id="fullpage">
+		<section class="section one">
+			<div class="section__content">
+				<h1 class="section__content__title" id="text-container">Destrua o status quo da sua empresa</h1>
+				<h2 class="section__content__subtitle">
+					Uma consultoria em análise de dados sem ser de análise de dados
+				</h2>
+			</div>
+			<div class="section__action__container">
+				<a class="section__action__btn action__btn__secondary" href="https://wa.me/message/5XRTOOIJQ5Q4B1">
+					<i class="fa-brands fa-whatsapp"></i>
+					Fale conosco no WhatsApp</a>
+				</a>
+			</div>
+		</section>
 
-  <main id="main">
+		<section class="section">
+			<div class="section__content">
+				<h1 class="section__content__title2">Não nos limitamos apenas a ferramentas</h1>
+				<h2 class="section__content__subtitle2">
+					Tome as melhores decisões, sem se limitar a ferramentas de dados
+				</h2>
+				<img src="media/stairs.svg" alt="" width="230px">
+			</div>
+			<div class="section__action__container">
+				<a class="section__action__btn action__btn__primary" href="https://wa.me/message/5XRTOOIJQ5Q4B1">
+					<i class="fa-brands fa-whatsapp"></i>
+					Fale conosco no WhatsApp</a>
+				</a>
+			</div>
+			<footer class="footer">
+				<ul>
+					<li><a href="#" style="cursor: none;">Copyright © 2024</a></li>
+					<li><a href="https://www.linkedin.com/company/strado-consultoria/" target="_blank">LinkedIn</a></li>
+					<li><a href="https://www.instagram.com/stradoconsultoria/" target="_blank">Instagram</a></li>
+					<li><a href="https://www.facebook.com/stradoconsultoria/" target="_blank">Facebook</a></li>
+				</ul>
+			</footer>
+		</section>
+	</section>
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center justify-content-center">
-      <div class="container position-relative">
-        <div class="row">
-          <div class="col-md-6">
-            <h1>Transformamos seus dados em insights valiosos</h1>
-            <h2>Aumente suas vendas em até 15% ao transformar dados em ações estratégicas.</h2>
-            <a href="https://wa.me/message/5XRTOOIJQ5Q4B1" class="btn-get-started scrollto mt-5">
-              <i class="bi bi-whatsapp"></i>
-              Fale conosco no WhatsApp</a>
-          </div>
-          <div class="col-md-6 text-center">
-            <img src="assets/img/compass-2.png" alt="" class="compass">
-          </div>
-        </div>
-      </div>
-    </section><!-- End Hero -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <h2 class="text-white">Como ajudaremos a sua empresa</h2>
-          <p class="paragraph-desc">Nossa consultoria é baseada em 3 pilares estratégicos. Cada um subdividido em áreas
-            específicas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-green">
-              <div class="icon">
-                <i class='bx bx-money-withdraw'></i>
-              </div>
-              <h4><a href="" class="no-link fw-bold">Dashboards interativos</a></h4>
-              <p>Compreenda profundamente o desempenho das suas vendas e identifique oportunidades
-                de crescimento. Utilizamos técnicas avançadas de análise para fornecer uma visão
-                clara do seu mercado e das tendências de vendas.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-            data-aos-delay="200">
-            <div class="icon-box iconbox-orange">
-              <div class="icon">
-                <i class='bx bx-spreadsheet'></i>
-              </div>
-              <h4><a href="" class="no-link fw-bold">Previsão de Vendas</a></h4>
-              <p>Antecipe a demanda futura e planeje suas estratégias com precisão.
-                Nossos modelos de previsão ajudam a otimizar o estoque, planejar campanhas
-                e alocar recursos de maneira eficiente.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
-            data-aos-delay="300">
-            <div class="icon-box iconbox-pink">
-              <div class="icon">
-                <i class='bx bxs-report'></i>
-              </div>
-              <h4><a href="" class="no-link fw-bold">Relatórios Personalizados</a></h4>
-              <p>Receba relatórios detalhados e fáceis de entender sobre o desempenho das suas vendas.
-                Nossos relatórios são personalizados para atender às suas necessidades específicas
-                e fornecer insights valiosos para a tomada de decisões.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Clients Section ======= -->
-    <!-- <section id="clients" class="clients section-bg">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End Clients Section -->
-
-  </main>
-
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-    <div class="container">
-
-      <div class="row text-center">
-        <div class="col-lg-12 pt-4 pt-lg-0">
-          <div class="section-title who-we-are">
-            <h2 class="text-white">Quem somos nós</h2>
-            <p class="fs-5 text-white">
-              Somos especialistas em análise de dados com experiência no setor de vendas. Nossa missão
-              é ajudar empresas a interpretar e utilizar dados de forma estratégica, aplicando técnicas 
-              de análise para melhorar vendas, marketing e operações
-            </p><br>
-
-            <p class="fs-5 text-white">Acreditamos no poder dos dados para transformar negócios e
-              estamos comprometidos em oferecer soluções personalizadas que atendam às necessidades
-              específicas de cada cliente.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- <video class="background-video" autoplay loop muted poster="assets/img/header.jpg">
-        <source src="assets/videos/header.mp4" type="video/mp4">
-      </video> -->
-    </div>
-  </section><!-- End About Section -->
-
-  <main id="main">
-
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team ">
-      <div class="container">
-
-        <div class="section-title">
-          <h2 class="text-white">Quem será seu consultor</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-8 col-md-6 text-white">
-            <p class="description">Brenno Duarte é um especialista em análise de dados e vendas, com experiência no uso
-              de Power BI e SQL para transformar dados em insights valiosos. Com experiência no
-              setor de vendas, Brenno já ajudou inúmeras empresas a otimizar suas estratégias e alcançar
-              resultados excepcionais. Sua abordagem prática e orientada por dados garante que cada cliente
-              receba soluções personalizadas e eficientes para impulsionar seus negócios.</p>
-
-            <p class="fst-italic mt-5 description">"Acredito que os dados são a chave para desbloquear o verdadeiro
-              potencial de qualquer
-              negócio. Meu objetivo é fornecer insights acionáveis e estratégias personalizadas para
-              ajudar nossos clientes a crescerem e prosperarem no mercado competitivo de hoje."</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/profile.png" class="img-fluid profile" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Brenno Duarte</h4>
-                <span>Chief Executive Officer</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Team Section -->
-
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container">
-
-        <div class="text-center">
-          <h3>Entre em contato conosco</h3>
-          <p>Estamos aqui para ajudar você a transformar seus dados em crescimento. Entre em contato
-            conosco para saber mais sobre nossos serviços e como podemos colaborar com
-            o sucesso do seu negócio.</p>
-          <a href="https://wa.me/message/5XRTOOIJQ5Q4B1" class="btn-get-started">
-            <i class="bi bi-whatsapp"></i>
-            Fale conosco no WhatsApp</a>
-        </div>
-
-      </div>
-    </section><!-- End Cta Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container d-md-flex py-4">
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Baker</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
-      </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a target="_blank" href="https://www.facebook.com/stradoconsultoria/" class="facebook"><i
-            class="bx bxl-facebook"></i></a>
-        <a target="_blank" href="https://www.instagram.com/stradoconsultoria/" class="instagram"><i
-            class="bx bxl-instagram"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/company/strado-consultoria/" class="linkedin"><i
-            class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/index.js"></script>
 </body>
 
 </html>
